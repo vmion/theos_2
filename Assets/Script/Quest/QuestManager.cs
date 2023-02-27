@@ -7,7 +7,8 @@ public class QuestManager : MonoBehaviour
     private static QuestManager Instance;
     public int questId;
     public int questActionIndex;    
-    Dictionary<int, QuestData> questList;    
+    Dictionary<int, QuestData> questList; 
+    
     void Awake()
     {
         if (Instance == null)

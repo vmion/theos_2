@@ -9,6 +9,7 @@ public class UI_quest : MonoBehaviour
     public GameObject ui;
     Renderer[] renQuest1;
     Renderer[] renQuest2;
+
     void Start()
     {
         renQuest1 = isQuest1.GetComponentsInChildren<Renderer>();
@@ -22,6 +23,7 @@ public class UI_quest : MonoBehaviour
             for(int i = 0; i < renQuest1.Length; i++)
             {
                 renQuest1[i].material.color = Color.gray;
+                
             }            
         }
         if(isQuest2.activeSelf == true)

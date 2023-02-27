@@ -11,9 +11,10 @@ public class NpcState : MonoBehaviour
     //Äù½ºÆ® ½Â³« ¿©ºÎ
     bool isOkay;
     //Äù½ºÆ® ¿Ï·á ¿©ºÎ
-    bool isCheck;
+    bool isCheck;    
+   
     void Update()
-    {
+    {        
         if(questState.isQuest == true)
         {
             objQuest.SetActive(true);

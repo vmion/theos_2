@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Obj_QuestMark : MonoBehaviour
-{
+{    
     Transform myTransform;
+    
     void Start()
     {
         myTransform = GetComponent<Transform>();

@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
     public int talkIndex;
     public GameObject talkPanel;
     public Text questTitle;
-    public GameObject Menu;    
-    
+    public GameObject Menu;
+
+    public GameObject NpcData;
     public void Awake()
     {
         isGameOver = false;
@@ -92,6 +93,17 @@ public class GameManager : MonoBehaviour
             StartCoroutine(FadeInStart());
             Debug.Log("Die");
             isGameOver = true;            
-        }        
+        }
+
+        if (SceneManager.GetActiveScene().name == "_01_Village")
+        {
+            //NpcManager.instance.gameObject.SetActive(true);
+            NpcData.SetActive(true);
+        }
+        else
+        {
+            //NpcManager.instance.gameObject.SetActive(false);
+            NpcData.SetActive(false);
+        }
     }
 }
