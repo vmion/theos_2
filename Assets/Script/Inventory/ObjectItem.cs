@@ -8,17 +8,17 @@ public class ObjectItem : MonoBehaviour, IObjectItem
     public Item item;
     [Header("아이템 이미지")]
     public Image itemImage;
-
+    
     void Start()
     {
-              
+        
     }
     void Update()
     {
         if (item != null)
         {
             itemImage.sprite = item.itemImage;
-        }
+        }        
     }
     public Item ClickItem()
     {

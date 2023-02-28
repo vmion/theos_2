@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: scroll
   itemImage: {fileID: 21300000, guid: db427fab3e94daf4caa704d9314a77a1, type: 3}
-  itemExplain: {fileID: 0}
-  itemType: 1
+  itemExplain: {fileID: 21300000, guid: db427fab3e94daf4caa704d9314a77a1, type: 3}
+  itemType: 2
