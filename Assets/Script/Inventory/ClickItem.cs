@@ -40,7 +40,7 @@ public class ClickItem : MonoBehaviour
 
     void HitCheckObject(RaycastResult hit) {
         IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
-        Debug.Log(hit.gameObject.transform.position);
+        //Debug.Log(hit.gameObject.transform.position);
         if (clickInterface != null) 
         {
             Item item = clickInterface.ClickItem();

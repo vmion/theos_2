@@ -60,6 +60,7 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\HairMaterialProfile.cs" />
     <Compile Include="Assets\Script\Npc\Npc_Panel.cs" />
     <Compile Include="Assets\Script\UI\UI_Inventory.cs" />
+    <Compile Include="Assets\Script\Inventory\ObjectItem.cs" />
     <Compile Include="Assets\Script\Npc\Npc_QuestChief.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\AnimationClipRecord.cs" />
     <Compile Include="Assets\Script\Npc\Npc_QuestElf.cs" />
@@ -68,8 +69,10 @@
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
     <Compile Include="Assets\Script\Npc\NpcState.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyeMaterialProfile.cs" />
+    <Compile Include="Assets\Script\Object\itemBox.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
     <Compile Include="Assets\Script\Character\Char_ani.cs" />
+    <Compile Include="Assets\Script\Npc\NpcManager.cs" />
     <Compile Include="Assets\Script\Object\Obj_Data.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\MecanimHipCorrection.cs" />
     <Compile Include="Assets\Script\Quest\QuestData.cs" />
@@ -91,13 +94,17 @@
     <Compile Include="Assets\Script\MapData\_02_ForestParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\CopyPosition.cs" />
     <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
+    <Compile Include="Assets\Script\Inventory\interfaceIObjectItem.cs" />
     <Compile Include="Assets\Script\MapData\_01_VillageParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\AnimationBoneWanderCorrection.cs" />
+    <Compile Include="Assets\Script\UI\UI_quest.cs" />
     <Compile Include="Assets\Script\Character\Char_Weapon.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Editor Window\AnimationClipRecorderWindow.cs" />
+    <Compile Include="Assets\Script\Inventory\SlotItem.cs" />
     <Compile Include="Assets\Script\JsonParser\ForQuest.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\SimpleClothingMaterialSelector.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyebrowProfile.cs" />
+    <Compile Include="Assets\Script\Inventory\ClickItem.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\ExtremityProfile.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
@@ -106,6 +113,7 @@
     <Compile Include="Assets\Script\Quest\TalkManager.cs" />
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
     <Compile Include="Assets\Script\Manager\LoadingManager.cs" />
+    <Compile Include="Assets\Script\Inventory\Inventory.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\AccessoryManager.cs" />
     <Compile Include="Assets\Script\Parser\_01_Parser.cs" />
     <Compile Include="Assets\Script\Quest\QuestManager.cs" />
@@ -121,6 +129,8 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\EditorParentageManager.cs" />
     <Compile Include="Assets\Script\Manager\MonsterManager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
+    <Compile Include="Assets\Script\Character\Char_Inventory.cs" />
+    <Compile Include="Assets\Script\Inventory\Item.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\InstanceCheck.cs" />
     <Compile Include="Assets\Script\Boss\Boss_Hp.cs" />
@@ -130,15 +140,6 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Npc\NpcManager.cs" />
-    <Compile Include="Assets\Script\Inventory\Item.cs" />
-    <Compile Include="Assets\Script\Inventory\SlotItem.cs" />
-    <Compile Include="Assets\Script\Inventory\Inventory.cs" />
-    <Compile Include="Assets\Script\UI\UI_quest.cs" />
-    <Compile Include="Assets\Script\Inventory\ObjectItem.cs" />
-    <Compile Include="Assets\Script\Inventory\interfaceIObjectItem.cs" />
-    <Compile Include="Assets\Script\Inventory\ClickItem.cs" />
-    <Compile Include="Assets\Script\Object\itemBox.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

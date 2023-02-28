@@ -5,7 +5,7 @@ using UnityEngine;
 public class itemBox : MonoBehaviour
 {
     public GameObject panel;
-    Inventory inventory;
+    public Char_Inventory CharInventory;
     public Item item;
     void Start()
     {
@@ -18,13 +18,21 @@ public class itemBox : MonoBehaviour
             panel.SetActive(true);            
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            panel.SetActive(false);
+        }
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Z))
         {
-            panel.SetActive(false);
-            gameObject.SetActive(false);
-            inventory.AddItem(item);
+            Debug.Log(item.name);            
+            CharInventory.AddCharItem(item);
+            panel.SetActive(false);            
+            Destroy(gameObject);
         }
     }
 }

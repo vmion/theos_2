@@ -380,6 +380,7 @@
 "Assets/Script/Character/Ani_skill4.cs"
 "Assets/Script/Character/Char_ani.cs"
 "Assets/Script/Character/Char_Auto.cs"
+"Assets/Script/Character/Char_Inventory.cs"
 "Assets/Script/Character/Char_Weapon.cs"
 "Assets/Script/InstanceCheck.cs"
 "Assets/Script/Inventory/ClickItem.cs"

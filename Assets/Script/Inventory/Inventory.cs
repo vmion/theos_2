@@ -43,7 +43,7 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            print("슬롯이 가득 차 있습니다.");
+            Debug.Log("슬롯이 가득 차 있습니다.");
         }
     }
 }
