@@ -15,6 +15,10 @@ public class ClickItem : MonoBehaviour
     public Image explain;
     public GameObject Equipment;
     public GameObject equipWeapon;
+    public GameObject equipObject;
+    Equipment equip;
+    public Text textWeapon;
+    public Text textObject;
     void Start()
     {
         grRay = canvas.GetComponent<GraphicRaycaster>();
@@ -47,6 +51,7 @@ public class ClickItem : MonoBehaviour
             if (results.Count > 0)
             {
                 hit = results[0];
+                HitEquipWeapon(hit);
                 HitEquipObject(hit);
             }
         }
@@ -68,6 +73,25 @@ public class ClickItem : MonoBehaviour
             explain.color = new Color(1, 1, 1, 0.8f);
         }
     }
+    void HitEquipWeapon(RaycastResult hit)
+    {
+        IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
+        //Debug.Log(hit.gameObject.transform.position);
+        if (clickInterface != null)
+        {
+            Item item = clickInterface.ClickItem();            
+            Debug.Log(item.itemName); 
+            if(item.itemType == Item.ItemType.Weapon)
+            {
+                Equipment.gameObject.SetActive(true);
+                //equipWeapon.SetActive(true);
+                Image weaponImage = equipWeapon.GetComponent<Image>();
+                weaponImage.sprite = item.itemImage;
+                //equip.EquipItem(item);
+                textWeapon.text = "E";
+            }
+        }
+    }
     void HitEquipObject(RaycastResult hit)
     {
         IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
@@ -75,14 +99,15 @@ public class ClickItem : MonoBehaviour
         if (clickInterface != null)
         {
             Item item = clickInterface.ClickItem();
-            Debug.Log(item.itemName); 
-            if(item.itemType == Item.ItemType.Weapon)
+            Debug.Log(item.itemName);
+            if (item.itemType == Item.ItemType.Object)
             {
                 Equipment.gameObject.SetActive(true);
-                equipWeapon.SetActive(true);
-                Image weaponImage = equipWeapon.GetComponent<Image>();
-                weaponImage.sprite = item.itemImage;
-                inventory.items.Remove(item);                
+                //equipWeapon.SetActive(true);
+                Image ObjectImage = equipObject.GetComponent<Image>();
+                ObjectImage.sprite = item.itemImage;
+                //equip.EquipItem(item);
+                textObject.text = "E";
             }
         }
     }

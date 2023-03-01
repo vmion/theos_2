@@ -52,13 +52,6 @@ public class Inventory : MonoBehaviour
     }
     void Update()
     {
-        for(int i = 0; i < slots.Length; i++)
-        {
-            if (items[i] = null)
-            {
-                slots[i].ITEM = null;
-                objectItem[i].item = null;
-            }            
-        }
+        
     }
 }

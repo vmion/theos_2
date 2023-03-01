@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: book
   itemImage: {fileID: 21300000, guid: ae496f5dad56ea645b72d374a0376368, type: 3}
   itemExplain: {fileID: 21300000, guid: ae496f5dad56ea645b72d374a0376368, type: 3}
-  itemType: 3
+  itemType: 4

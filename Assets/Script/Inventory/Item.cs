@@ -9,6 +9,7 @@ public class Item : ScriptableObject
     {
         Weapon,
         Equipment,
+        Object,
         Used,
         ETC,
     }

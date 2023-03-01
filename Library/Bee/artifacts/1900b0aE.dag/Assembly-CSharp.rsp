@@ -384,6 +384,7 @@
 "Assets/Script/Character/Char_Weapon.cs"
 "Assets/Script/InstanceCheck.cs"
 "Assets/Script/Inventory/ClickItem.cs"
+"Assets/Script/Inventory/Equipment.cs"
 "Assets/Script/Inventory/interfaceIObjectItem.cs"
 "Assets/Script/Inventory/Inventory.cs"
 "Assets/Script/Inventory/Item.cs"
