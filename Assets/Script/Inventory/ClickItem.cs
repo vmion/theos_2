@@ -70,7 +70,7 @@ public class ClickItem : MonoBehaviour
             //explain.sprite를 아이템에 달려있는 sprite로 변경
             //explain의 pivot을 0,1로 변경
             explain.sprite = item.itemExplain;
-            explain.color = new Color(1, 1, 1, 0.8f);
+            explain.color = new Color(1, 1, 1, 0.95f);
         }
     }
     void HitEquipWeapon(RaycastResult hit)

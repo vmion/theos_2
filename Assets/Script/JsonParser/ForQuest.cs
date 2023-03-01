@@ -58,8 +58,8 @@ public class ForQuest : MonoBehaviour
         q1.title = "빼앗긴 짐을 되찾아라";
         q1.story = "마을주민이 짐을 가지고 숲을 건너오다가 몬스터들에게 짐을 빼앗겼다." +
             "\n\n건네받은 검을 들고 그 짐을 되찾아오자.";
-        q1.forComplete = "몬스터를 사냥하고 짐 5개 회수하기";
-        q1.rewards = "숲의 반지";
+        q1.forComplete = "몬스터를 사냥하고 짐 3개 회수하기";
+        q1.rewards = "초보자의 반지";
         questList.Add(q1);
 
         //2번째 퀘스트

@@ -78,6 +78,7 @@
     <Compile Include="Assets\Script\Quest\QuestData.cs" />
     <Compile Include="Assets\Script\Manager\Character_Manager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\ExtremityManager.cs" />
+    <Compile Include="Assets\Script\Inventory\Equipment.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\CreatureProfile.cs" />
     <Compile Include="Assets\Script\Manager\Spawn_Manager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill4.cs" />
@@ -140,7 +141,8 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Inventory\Equipment.cs" />
+    <Compile Include="Assets\Script\JsonParser\ForStatus.cs" />
+    <Compile Include="Assets\Script\JsonParser\ForHpMp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

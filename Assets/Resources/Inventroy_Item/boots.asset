@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: boots
   itemImage: {fileID: 21300000, guid: e420c5bc93cb2604695a893500c897e3, type: 3}
-  itemExplain: {fileID: 21300000, guid: e420c5bc93cb2604695a893500c897e3, type: 3}
+  itemExplain: {fileID: 21300000, guid: 7cd606904a8be934481eb2cfe57299d7, type: 3}
   itemType: 1
