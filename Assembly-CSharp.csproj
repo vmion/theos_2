@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\JsonParser\ForHpMp.cs" />
     <Compile Include="Assets\Script\Quest\QuestButton.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\HairMaterialProfile.cs" />
     <Compile Include="Assets\Script\Npc\Npc_Panel.cs" />
@@ -94,7 +95,7 @@
     <Compile Include="Assets\Script\Monster\Monster_ani.cs" />
     <Compile Include="Assets\Script\MapData\_02_ForestParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\CopyPosition.cs" />
-    <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
+    <Compile Include="Assets\Script\Camera\Camera_Manager.cs" />
     <Compile Include="Assets\Script\Inventory\interfaceIObjectItem.cs" />
     <Compile Include="Assets\Script\MapData\_01_VillageParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\AnimationBoneWanderCorrection.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\ExtremityProfile.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
+    <Compile Include="Assets\Script\JsonParser\ForStatus.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
     <Compile Include="Assets\Script\UI\UI_Load.cs" />
     <Compile Include="Assets\Script\Quest\TalkManager.cs" />
@@ -141,8 +143,8 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\JsonParser\ForStatus.cs" />
-    <Compile Include="Assets\Script\JsonParser\ForHpMp.cs" />
+    <Compile Include="Assets\Script\Camera\MinimapCamera.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_ani.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -163,6 +165,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Shaders\Minimap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\DownLoadAssets\VillageAssets\GreekPack1Lite\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

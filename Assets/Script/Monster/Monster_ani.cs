@@ -10,6 +10,7 @@ public class Monster_ani : MonoBehaviour
     Collider playerCollider;
     Collider mobCollider;
     Transform Mob;
+    
     public bool COLLISIONCHECK { get; set; }
     void Awake()
     {
@@ -21,9 +22,9 @@ public class Monster_ani : MonoBehaviour
     }
     void Start()
     {        
-        Debug.Log(Mob.gameObject.name);
-        Debug.Log(playerCollider.name);
-        Debug.Log(mobCollider.gameObject.name);
+        //Debug.Log(Mob.gameObject.name);
+        //Debug.Log(playerCollider.name);
+        //Debug.Log(mobCollider.gameObject.name);
         COLLISIONCHECK = true;
         Invoke("AutoMove", 3f);
     }
@@ -48,9 +49,10 @@ public class Monster_ani : MonoBehaviour
         else
         {
             Mani.SetBool("isMoving", true);
-        }
-                   
-    }    
+        }        
+        
+    }   
+    
     public void AutoMove()
     {        
         nextMove.x = (int)Random.Range(-3f, 3f);        
@@ -71,5 +73,21 @@ public class Monster_ani : MonoBehaviour
         }        
         float time = Random.Range(2f, 5f);                
         Invoke("AutoMove", time);
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
+            Debug.Log("trigger");
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            gameObject.SetActive(false);
+            Debug.Log("collison");
+        }
     }    
 }

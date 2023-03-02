@@ -10,7 +10,7 @@ public class MonsterManager : MonoBehaviour
     public static List<Vector3> CenterList;
     public static GameObject mob;
     bool check = true;
-
+    public GameObject[] markers = new GameObject[12];
     public static MonsterManager instance
     {
         get
@@ -31,7 +31,7 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-        CenterList = new List<Vector3>();        
+        CenterList = new List<Vector3>();          
     }
     void Start()
     {
@@ -73,7 +73,11 @@ public class MonsterManager : MonoBehaviour
                 mob.tag = "Monster";
                 mob.name = "켄타우로스" + i;
                 mob.transform.position = centerPos;                
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                Transform markT = markers[i].gameObject.transform;
+                markT.SetParent(mob.transform);
+                markT.position = new Vector3(mob.transform.position.x, markT.position.y,
+                    mob.transform.position.z);
             }
             else if (i % 3 == 1)
             {
@@ -81,7 +85,11 @@ public class MonsterManager : MonoBehaviour
                 mob.tag = "Monster";
                 mob.name = "고르곤" + i;
                 mob.transform.position = centerPos;                
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                Transform markT = markers[i].gameObject.transform;
+                markT.SetParent(mob.transform);
+                markT.position = new Vector3(mob.transform.position.x, markT.position.y,
+                    mob.transform.position.z);
             }
             else
             {
@@ -89,7 +97,11 @@ public class MonsterManager : MonoBehaviour
                 mob.tag = "Monster";
                 mob.name = "사티르" + i;
                 mob.transform.position = centerPos;                
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                Transform markT = markers[i].gameObject.transform;
+                markT.SetParent(mob.transform);
+                markT.position = new Vector3(mob.transform.position.x, markT.position.y,
+                    mob.transform.position.z);
             }            
         }        
     }

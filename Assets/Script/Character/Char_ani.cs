@@ -29,8 +29,10 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Skill_4;
     [SerializeField]
-    private Image Portion;       
-    
+    private Image Portion;
+
+    public GameObject marker;
+    public GameObject minimpaCam;
     void Start()
     {
         Char = Character_Manager.instance.transform.GetChild(0);
@@ -61,7 +63,19 @@ public class Char_ani :  MonoBehaviour
             moveSpeed = 0;
             ani.SetBool("Dead", true);
         }        
-    }    
+    }   
+    public void Attack()
+    {
+        if (Skill_1.fillAmount == 1)
+        {
+            StartCoroutine(CoolTime(Skill_1, 1));
+            ani.SetTrigger("Attack");
+        }
+        else
+        {
+            Debug.Log("쿨타임입니다.");
+        }
+    }
     public void LookAround()
     {        
         //LCcenterPos = Camera_Lever.rectTransform.position;
@@ -176,6 +190,12 @@ public class Char_ani :  MonoBehaviour
         //LookAround();
         Move();
         ButtonSkill();
-        ButtonPortion();        
+        ButtonPortion();
+
+        marker.transform.position = new Vector3(Char.transform.position.x, marker.transform.position.y,
+            Char.transform.position.z);
+        marker.transform.forward = -(Char.transform.forward);
+        minimpaCam.transform.position = new Vector3(Char.transform.position.x, minimpaCam.transform.position.y,
+            Char.transform.position.z);
     }    
 }

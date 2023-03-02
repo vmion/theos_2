@@ -6,7 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class UI_button : MonoBehaviour
 {    
-    public GameObject ui;    
+    public GameObject ui;
+    GameObject player;
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+    }
     public void CloseButton()
     {        
         Time.timeScale = 1f;
@@ -19,6 +24,21 @@ public class UI_button : MonoBehaviour
         Obj_Portal.CamX = true;
         ui.SetActive(true);
     }
+    public void OpenAutoUI()
+    {
+        if(player.GetComponent<Char_Auto>() == null)
+        {
+            ui = GameObject.Find("UI_default").transform.Find("Auto_check").gameObject;            
+        }
+        else if (player.GetComponent<Char_Auto>() != null)
+        {
+            ui = GameObject.Find("UI_default").transform.Find("AutoEnd_check").gameObject;            
+        }
+        Time.timeScale = 0f;
+        Obj_Portal.CamX = true;
+        ui.SetActive(true);
+    }
+    
     public void CheckPortal_Village()
     {        
         Obj_Portal.CamX = false;
@@ -46,6 +66,14 @@ public class UI_button : MonoBehaviour
         ui.SetActive(false);
         Time.timeScale = 1f;
         Obj_Portal.CamX = false;
-        gameObject.GetComponentInChildren<Char_Auto>().AutoMove();
-    }     
+        player.AddComponent<Char_Auto>();
+    } 
+    public void EndAuto()
+    {
+        ui.SetActive(false);
+        Time.timeScale = 1f;
+        Obj_Portal.CamX = false;
+        Destroy(player.GetComponent<Char_Auto>());
+        player.GetComponent<Char_ani>().enabled = true;
+    }
 }
