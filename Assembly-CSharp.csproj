@@ -108,6 +108,7 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyebrowProfile.cs" />
     <Compile Include="Assets\Script\Inventory\ClickItem.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\ExtremityProfile.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_ani.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
     <Compile Include="Assets\Script\JsonParser\ForStatus.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Assets\Script\Manager\MonsterManager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
     <Compile Include="Assets\Script\Character\Char_Inventory.cs" />
+    <Compile Include="Assets\Script\Camera\MinimapCamera.cs" />
     <Compile Include="Assets\Script\Inventory\Item.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\InstanceCheck.cs" />
@@ -143,8 +145,6 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Camera\MinimapCamera.cs" />
-    <Compile Include="Assets\Script\Boss\Boss_ani.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

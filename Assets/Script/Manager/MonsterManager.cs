@@ -11,6 +11,7 @@ public class MonsterManager : MonoBehaviour
     public static GameObject mob;
     bool check = true;
     public GameObject[] markers = new GameObject[12];
+    public List<GameObject> mobs = new List<GameObject>();
     public static MonsterManager instance
     {
         get
@@ -35,14 +36,7 @@ public class MonsterManager : MonoBehaviour
     }
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "_02_Forest")
-        {
-            ForestSpawnAll();
-        }
-        if (SceneManager.GetActiveScene().name == "_03_Labyrinth")
-        {
-            LabyrinthSpawnAll();
-        }
+        ForestSpawnAll();        
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -74,10 +68,7 @@ public class MonsterManager : MonoBehaviour
                 mob.name = "켄타우로스" + i;
                 mob.transform.position = centerPos;                
                 mob.AddComponent<Monster_ani>();
-                Transform markT = markers[i].gameObject.transform;
-                markT.SetParent(mob.transform);
-                markT.position = new Vector3(mob.transform.position.x, markT.position.y,
-                    mob.transform.position.z);
+                mobs.Add(mob);
             }
             else if (i % 3 == 1)
             {
@@ -86,10 +77,7 @@ public class MonsterManager : MonoBehaviour
                 mob.name = "고르곤" + i;
                 mob.transform.position = centerPos;                
                 mob.AddComponent<Monster_ani>();
-                Transform markT = markers[i].gameObject.transform;
-                markT.SetParent(mob.transform);
-                markT.position = new Vector3(mob.transform.position.x, markT.position.y,
-                    mob.transform.position.z);
+                mobs.Add(mob);
             }
             else
             {
@@ -98,50 +86,11 @@ public class MonsterManager : MonoBehaviour
                 mob.name = "사티르" + i;
                 mob.transform.position = centerPos;                
                 mob.AddComponent<Monster_ani>();
-                Transform markT = markers[i].gameObject.transform;
-                markT.SetParent(mob.transform);
-                markT.position = new Vector3(mob.transform.position.x, markT.position.y,
-                    mob.transform.position.z);
+                mobs.Add(mob);
             }            
         }        
     }
-    public void LabyrinthSpawnAll()
-    {
-        int row = Spawn_Manager.row;
-        int column = Spawn_Manager.column;        
-        int tileIndex = row * column;
-        for (int i = 0; i < tileIndex; i++)
-        {
-            int nR = i / column;
-            int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);
-            CenterList.Add(centerPos);
-            if (i % 3 == 0)
-            {
-                mob = Instantiate(mobDic["사티르"], ParentMonster);
-                mob.tag = "Monster";
-                mob.name = "사티르" + i;
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }
-            else if (i % 3 == 1)
-            {
-                mob = Instantiate(mobDic["고르곤"], ParentMonster);
-                mob.tag = "Monster";
-                mob.name = "고르곤" + i;
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }           
-            else
-            {
-                mob = Instantiate(mobDic["아라크네"], ParentMonster);
-                mob.tag = "Monster";
-                mob.name = "아라크네" + i;
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }
-        }
-    }
+    
     void Wait()
     {
         //yield return new WaitForSecondsRealtime(5f);
@@ -155,5 +104,12 @@ public class MonsterManager : MonoBehaviour
             transform.GetChild(0).gameObject.SetActive(check);
             check = false;            
        }
+       for(int i = 0; i < markers.Length; i++)
+       {
+            Transform markT = markers[i].gameObject.transform;
+            Transform tmpMob = mobs[i].gameObject.transform;
+            markT.position = new Vector3(tmpMob.transform.position.x, markT.position.y,
+                tmpMob.transform.position.z);
+        }
     }
 }
