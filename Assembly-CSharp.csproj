@@ -145,17 +145,39 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
+    <Compile Include="Assets\Script\Monster\DropItem.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\CacheBehaviour.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Demo\Scripts\CurlParticleEmitterDemo.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\Singleton.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\Xorshift.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\Extensions.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Core\CurlParticle.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\CurlParticleUtility.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\CurlParticleProfile.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Demo\Scripts\Rotater.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Demo\Scripts\DistanceEmitterDemo.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Emitter\DistanceEmitter.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Emitter\ShapeEmitter.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\ObjectPool.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Core\CurlParticleSystem.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Utility\CurlParticlePool.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Demo\Scripts\ShapeEmitterDemo.cs" />
+    <Compile Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Scripts\Emitter\CurlParticleEmitter.cs" />
+    <Compile Include="Assets\Script\Character\Char_EquipWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\readme-jp.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Shaders\CurlNoiseParticle.compute" />
     <None Include="Assets\DownLoadAssets\Fantasy Skybox FREE\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\DownLoadAssets\Fantasy Skybox FREE\ReleaseNotes.txt" />
     <None Include="Assets\DownLoadAssets\VillageAssets\RomanCityPack1Lite\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Shaders\Define.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -165,14 +187,17 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\readme-en.txt" />
     <None Include="Assets\Shaders\Minimap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\DownLoadAssets\VillageAssets\GreekPack1Lite\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Shaders\ParticleShader.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Shaders\ScenenameShader.shader" />
+    <None Include="Assets\DownLoadAssets\CurlNoiseParticleSystem\Shaders\NoiseMath.cginc" />
     <None Include="Assets\Shaders\MultiVertex.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
