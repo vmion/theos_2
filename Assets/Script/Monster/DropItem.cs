@@ -18,7 +18,7 @@ public class DropItem : MonoBehaviour
             AudioSource deathAudio = instance.GetComponent<AudioSource>();
             deathAudio.Play();
 
-            Destroy(instance.gameObject, instance.duration);
+            Destroy(instance.gameObject, instance.main.duration);
             gameObject.SetActive(false);
         }
     }

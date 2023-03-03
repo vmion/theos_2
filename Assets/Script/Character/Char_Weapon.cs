@@ -35,7 +35,7 @@ public class Char_Weapon : MonoBehaviour
         swordParticle.Play();
         swordAudio.Play();        
 
-        Destroy(swordParticle.gameObject, swordParticle.duration);
+        Destroy(swordParticle.gameObject, swordParticle.main.duration);
         Destroy(gameObject);
     }
     private float CalculateDamage(Vector3 targetPosition)

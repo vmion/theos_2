@@ -19,6 +19,8 @@ public class ClickItem : MonoBehaviour
     Equipment equip;
     public Text textWeapon;
     public Text textObject;
+
+    public Char_EquipWeapon equipSword;
     void Start()
     {
         grRay = canvas.GetComponent<GraphicRaycaster>();
@@ -64,7 +66,7 @@ public class ClickItem : MonoBehaviour
         if (clickInterface != null) 
         {
             Item item = clickInterface.ClickItem();
-            Debug.Log(item.itemName);            
+            //Debug.Log(item.itemName);            
             explain.gameObject.SetActive(true);
             explain.transform.position = _eventData.position;
             //explain.sprite를 아이템에 달려있는 sprite로 변경
@@ -80,7 +82,7 @@ public class ClickItem : MonoBehaviour
         if (clickInterface != null)
         {
             Item item = clickInterface.ClickItem();            
-            Debug.Log(item.itemName); 
+            //Debug.Log(item.itemName); 
             if(item.itemType == Item.ItemType.Weapon)
             {
                 Equipment.gameObject.SetActive(true);
@@ -89,6 +91,7 @@ public class ClickItem : MonoBehaviour
                 weaponImage.sprite = item.itemImage;
                 //equip.EquipItem(item);
                 textWeapon.text = "E";
+                equipSword.EquipSword();
             }
         }
     }
@@ -99,7 +102,7 @@ public class ClickItem : MonoBehaviour
         if (clickInterface != null)
         {
             Item item = clickInterface.ClickItem();
-            Debug.Log(item.itemName);
+            //Debug.Log(item.itemName);
             if (item.itemType == Item.ItemType.Object)
             {
                 Equipment.gameObject.SetActive(true);
