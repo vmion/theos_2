@@ -63,19 +63,8 @@ public class Char_ani :  MonoBehaviour
             moveSpeed = 0;
             ani.SetBool("Dead", true);
         }        
-    }   
-    public void Attack()
-    {
-        if (Skill_1.fillAmount == 1)
-        {
-            StartCoroutine(CoolTime(Skill_1, 1));
-            ani.SetTrigger("Attack");
-        }
-        else
-        {
-            Debug.Log("쿨타임입니다.");
-        }
-    }
+    }  
+    
     public void LookAround()
     {        
         //LCcenterPos = Camera_Lever.rectTransform.position;
