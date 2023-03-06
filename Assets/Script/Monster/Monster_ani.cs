@@ -6,26 +6,15 @@ public class Monster_ani : MonoBehaviour
 {
     Animator Mani;    
     Vector3 nextMove;       
-    Vector3 Center;
-    Collider playerCollider;
-    Collider mobCollider;
-    Transform Mob;
+    Vector3 Center;      
     
-    public bool COLLISIONCHECK { get; set; }
     void Awake()
     {
         Mani = GetComponent<Animator>();
-        Center = transform.position;
-        mobCollider = GetComponent<Collider>();
-        Mob = GetComponent<Transform>();
-        playerCollider = Character_Manager.playerCollider;
+        Center = transform.position;        
     }
     void Start()
-    {        
-        //Debug.Log(Mob.gameObject.name);
-        //Debug.Log(playerCollider.name);
-        //Debug.Log(mobCollider.gameObject.name);
-        COLLISIONCHECK = true;
+    {    
         Invoke("AutoMove", 3f);
     }
     void Update()
@@ -73,21 +62,5 @@ public class Monster_ani : MonoBehaviour
         }        
         float time = Random.Range(2f, 5f);                
         Invoke("AutoMove", time);
-    }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            gameObject.SetActive(false);
-            Debug.Log("trigger");
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            gameObject.SetActive(false);
-            Debug.Log("collison");
-        }
-    }    
+    }       
 }

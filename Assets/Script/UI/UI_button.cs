@@ -8,9 +8,11 @@ public class UI_button : MonoBehaviour
 {    
     public GameObject ui;
     GameObject player;
+    GameObject child;
     private void Start()
     {
         player = GameObject.Find("Player");
+        child = player.transform.GetChild(0).gameObject;
     }
     public void CloseButton()
     {        
@@ -26,11 +28,11 @@ public class UI_button : MonoBehaviour
     }
     public void OpenAutoUI()
     {
-        if(player.GetComponent<Char_Auto>() == null)
+        if(child.GetComponent<Char_Auto>() == null)
         {
             ui = GameObject.Find("UI_default").transform.Find("Auto_check").gameObject;            
         }
-        else if (player.GetComponent<Char_Auto>() != null)
+        else if (child.GetComponent<Char_Auto>() != null)
         {
             ui = GameObject.Find("UI_default").transform.Find("AutoEnd_check").gameObject;            
         }
@@ -66,14 +68,16 @@ public class UI_button : MonoBehaviour
         ui.SetActive(false);
         Time.timeScale = 1f;
         Obj_Portal.CamX = false;
-        player.AddComponent<Char_Auto>();
+        //player.AddComponent<Char_Auto>();
+        child.AddComponent<Char_Auto>();
     } 
     public void EndAuto()
     {
         ui.SetActive(false);
         Time.timeScale = 1f;
         Obj_Portal.CamX = false;
-        Destroy(player.GetComponent<Char_Auto>());
+        //Destroy(player.GetComponent<Char_Auto>());
+        Destroy(child.GetComponent<Char_Auto>());
         player.GetComponent<Char_ani>().enabled = true;
     }
 }

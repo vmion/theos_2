@@ -31,8 +31,12 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Portion;
 
+    public ParticleSystem buff;
+    public AudioSource skillAudio1;
+
     public GameObject marker;
     public GameObject minimpaCam;
+    
     void Start()
     {
         Char = Character_Manager.instance.transform.GetChild(0);
@@ -91,7 +95,8 @@ public class Char_ani :  MonoBehaviour
             if(Skill_1.fillAmount == 1)
             {                
                 StartCoroutine(CoolTime(Skill_1, 1));                
-                ani.SetTrigger("Attack");
+                ani.SetTrigger("Attack");                
+                skillAudio1.Play();
             }
             else
             {
@@ -126,9 +131,12 @@ public class Char_ani :  MonoBehaviour
         {
             if (Skill_4.fillAmount == 1)
             {
-                StartCoroutine(CoolTime(Skill_4, 30));
+                StartCoroutine(CoolTime(Skill_4, 0));
                 ani.SetTrigger("Buff");
                 StartCoroutine(OnBuff(20));
+                Vector3 rotation = new Vector3(-90, 0, 0);
+                ParticleSystem instance = Instantiate(buff, transform.position, Quaternion.Euler(rotation));
+                Destroy(instance.gameObject, instance.main.duration);
             }
             else
             {

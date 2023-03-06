@@ -14,6 +14,7 @@ public class Ani_skill2 : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Char_ani.moveSpeed = 0f;
+        Char_Weapon.effect.SetActive(true);
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
@@ -21,6 +22,7 @@ public class Ani_skill2 : StateMachineBehaviour
     {
         Char_ani.moveSpeed = 3f;
         animator.ResetTrigger("Swing");
+        Char_Weapon.effect.SetActive(false);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Char_Weapon : MonoBehaviour
 {    
-    public LayerMask monster;
-    public ParticleSystem swordParticle;
-    public AudioSource swordAudio;
+    public LayerMask monster;   
 
     public float maxDamage = 100f;
     public float swordForce = 100f;
     public float swordRange = 3f;
+
+    public static GameObject effect;
     void Start()
     {
-        
+        effect = transform.GetChild(0).gameObject;
+        effect.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -28,15 +29,7 @@ public class Char_Weapon : MonoBehaviour
             DropItem targetMob = colliders[i].GetComponent<DropItem>();
             float damage = CalculateDamage(colliders[i].transform.position);
             targetMob.TakeDamage(damage);
-        }
-
-        swordParticle.transform.parent = null;
-
-        swordParticle.Play();
-        swordAudio.Play();        
-
-        Destroy(swordParticle.gameObject, swordParticle.main.duration);
-        Destroy(gameObject);
+        }    
     }
     private float CalculateDamage(Vector3 targetPosition)
     {
