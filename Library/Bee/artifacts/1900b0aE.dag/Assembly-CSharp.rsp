@@ -395,7 +395,6 @@
 "Assets/Script/Character/Char_EquipWeapon.cs"
 "Assets/Script/Character/Char_Inventory.cs"
 "Assets/Script/Character/Char_Weapon.cs"
-"Assets/Script/Character/WeaponTrigger.cs"
 "Assets/Script/InstanceCheck.cs"
 "Assets/Script/Inventory/ClickItem.cs"
 "Assets/Script/Inventory/Equipment.cs"

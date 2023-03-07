@@ -12,6 +12,7 @@ TagManager:
   - Panel
   - Monster
   - Boss
+  - weapon
   layers:
   - Default
   - TransparentFX

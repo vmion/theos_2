@@ -6,18 +6,46 @@ public class Monster_ani : MonoBehaviour
 {
     Animator Mani;    
     Vector3 nextMove;       
-    Vector3 Center;      
-    
+    Vector3 Center;
+
+    //DropItem dropItem;
+    public Char_Inventory CharInventory;
+    public Item item;
+    public ParticleSystem particle;
+    public float hp = 100f;
     void Awake()
     {
         Mani = GetComponent<Animator>();
-        Center = transform.position;        
+        Center = transform.position;
+        //gameObject.AddComponent<DropItem>();
+        CharInventory = Character_Manager.instance.GetComponent<Char_Inventory>();
+        item = Resources.Load<Item>("Inventroy_Item/Gem");
+        particle = Resources.Load<ParticleSystem>("Particle/Hit_05");
     }
     void Start()
     {    
         Invoke("AutoMove", 3f);
-    }   
-    
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "weapon")
+        {
+            //dropItem.TakeDamage(100);            
+            hp = 0;
+            if (hp <= 0)
+            {
+                CharInventory.AddCharItem(item);
+                Vector3 particlePos = new Vector3(0, 1, 0);
+                ParticleSystem cloneParticle = Instantiate(particle, transform.position + particlePos,
+                    transform.rotation);
+                //AudioSource deathAudio = cloneParticle.GetComponent<AudioSource>();
+                //deathAudio.Play();
+
+                Destroy(cloneParticle.gameObject, cloneParticle.main.duration);
+                gameObject.SetActive(false);
+            }
+        }
+    }
     void Update()
     {
         Vector3 MPos = transform.position;
@@ -39,8 +67,21 @@ public class Monster_ani : MonoBehaviour
         else
         {
             Mani.SetBool("isMoving", true);
-        }        
-        
+        }
+        /*
+        if (hp <= 0)
+        {            
+            CharInventory.AddCharItem(item);
+            Vector3 particlePos = new Vector3(0, 1, 0);
+            ParticleSystem cloneParticle = Instantiate(particle, transform.position + particlePos,
+                transform.rotation);
+            //AudioSource deathAudio = cloneParticle.GetComponent<AudioSource>();
+            //deathAudio.Play();
+
+            Destroy(cloneParticle.gameObject, cloneParticle.main.duration);
+            gameObject.SetActive(false);
+        }
+        */
     }   
     
     public void AutoMove()

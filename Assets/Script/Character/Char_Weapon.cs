@@ -7,8 +7,7 @@ public class Char_Weapon : MonoBehaviour
     public static GameObject effect;
     void Start()
     {
-        effect = transform.GetChild(0).gameObject;
-        effect.AddComponent<WeaponTrigger>();
+        effect = transform.GetChild(0).gameObject;        
         effect.SetActive(false);
     }      
 }

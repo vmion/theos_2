@@ -67,7 +67,7 @@ public class MonsterManager : MonoBehaviour
                 mob.tag = "Monster";
                 mob.name = "켄타우로스" + i;
                 mob.transform.position = centerPos;                
-                mob.AddComponent<Monster_ani>();
+                mob.AddComponent<Monster_ani>();                
                 mobs.Add(mob);
             }
             else if (i % 3 == 1)
