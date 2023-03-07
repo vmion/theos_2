@@ -72,6 +72,8 @@
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
     <Compile Include="Assets\Script\Npc\NpcState.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyeMaterialProfile.cs" />
+    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\RenderEffect.cs" />
+    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\TransformExtension.cs" />
     <Compile Include="Assets\Script\Object\itemBox.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
     <Compile Include="Assets\Script\Character\Char_ani.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\CreatureProfile.cs" />
     <Compile Include="Assets\Script\Manager\Spawn_Manager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill4.cs" />
+    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
     <Compile Include="Assets\Script\Parser\_02_Parser.cs" />
     <Compile Include="Assets\Script\Parser\ParserBase.cs" />
     <Compile Include="Assets\Script\UI\UI_fillamount.cs" />
@@ -105,6 +108,7 @@
     <Compile Include="Assets\Script\Character\Char_Weapon.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Editor Window\AnimationClipRecorderWindow.cs" />
     <Compile Include="Assets\Script\Inventory\SlotItem.cs" />
+    <Compile Include="Assets\Script\Mixer\ChangeBgm.cs" />
     <Compile Include="Assets\Script\JsonParser\ForQuest.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\SimpleClothingMaterialSelector.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyebrowProfile.cs" />
@@ -113,12 +117,16 @@
     <Compile Include="Assets\Script\Boss\Boss_ani.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
+    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
     <Compile Include="Assets\Script\JsonParser\ForStatus.cs" />
+    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
     <Compile Include="Assets\Script\UI\UI_Load.cs" />
+    <Compile Include="Assets\Script\Mixer\AudioMixer_1.cs" />
     <Compile Include="Assets\Script\Quest\TalkManager.cs" />
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
     <Compile Include="Assets\Script\Manager\LoadingManager.cs" />
+    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />
     <Compile Include="Assets\Script\Inventory\Inventory.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\AccessoryManager.cs" />
     <Compile Include="Assets\Script\Parser\_01_Parser.cs" />
@@ -147,14 +155,7 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
-    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectShaderPropertyStr.cs" />
-    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\RenderEffect.cs" />
-    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectController.cs" />
-    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\TransformExtension.cs" />
-    <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />
-    <Compile Include="Assets\Script\Mixer\AudioMixer_1.cs" />
-    <Compile Include="Assets\Script\Mixer\ChangeBgm.cs" />
+    <Compile Include="Assets\Script\Character\WeaponTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />
@@ -855,6 +856,9 @@
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -885,6 +889,9 @@
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -896,12 +903,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,8 @@ public class Monster_ani : MonoBehaviour
     void Start()
     {    
         Invoke("AutoMove", 3f);
-    }
+    }   
+    
     void Update()
     {
         Vector3 MPos = transform.position;

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2215302112990717154}
   m_Layer: 0
   m_Name: upper_arm.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -77,7 +77,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0016839105, y: 0.0032579454, z: -0.00017261693}
+  m_ConnectedAnchor: {x: 0.0016839113, y: 0.0032579454, z: -0.00017261693}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 2511386003886135517}
   m_Layer: 0
   m_Name: falseshin.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 6301410676696725867}
   m_Layer: 0
   m_Name: UpperTailControl
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 2778585019321537357}
   m_Layer: 0
   m_Name: HandIkTarget.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 8116143558650168206}
   m_Layer: 0
   m_Name: Butt.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 356544075629921882}
   m_Layer: 0
   m_Name: falsethigh.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 5745744709707577375}
   m_Layer: 0
   m_Name: legiktarget.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 2215302113495019121}
   m_Layer: 0
   m_Name: Hoof.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -364,7 +364,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000004457572, y: 0.0042408365, z: -0.00042119715}
+  m_ConnectedAnchor: {x: -0.000004461457, y: 0.004240836, z: -0.0004211974}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 2215302112839927641}
   m_Layer: 0
   m_Name: Hoof.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -461,7 +461,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000005209411, y: 0.0042408393, z: -0.0004211897}
+  m_ConnectedAnchor: {x: 0.0000052124815, y: 0.004240839, z: -0.00042118994}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -511,9 +511,10 @@ GameObject:
   - component: {fileID: -6530235167089267874}
   - component: {fileID: 6078096783716715438}
   - component: {fileID: 2036327726480470416}
+  - component: {fileID: 6942998494091661877}
   m_Layer: 0
   m_Name: 4_Minotaur
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -737,7 +738,7 @@ MeshCollider:
   m_GameObject: {fileID: 1332850369233326988}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -758,6 +759,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &6942998494091661877
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332850369233326988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 4.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &1370212067941953358
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +784,7 @@ GameObject:
   - component: {fileID: 6542688679977749445}
   m_Layer: 0
   m_Name: LowerTailControl
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -802,7 +817,7 @@ GameObject:
   - component: {fileID: 5634021274648963229}
   m_Layer: 0
   m_Name: Male
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -986,7 +1001,7 @@ GameObject:
   - component: {fileID: 8171241295252805239}
   m_Layer: 0
   m_Name: HoofIkBind.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1018,7 +1033,7 @@ GameObject:
   - component: {fileID: 8188951067207364081}
   m_Layer: 0
   m_Name: Tail.001
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1053,7 +1068,7 @@ GameObject:
   - component: {fileID: 2215302112671668652}
   m_Layer: 0
   m_Name: Shin.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1116,7 +1131,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000013533282, y: 0.003145107, z: -0.0000000016298147}
+  m_ConnectedAnchor: {x: 0, y: 0.0031451066, z: -0.0000000013969841}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -1164,7 +1179,7 @@ GameObject:
   - component: {fileID: 2215302112360676223}
   m_Layer: 0
   m_Name: forearm.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1227,7 +1242,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000002910383, y: 0.0030350245, z: 0.0000000049476516}
+  m_ConnectedAnchor: {x: 0.0000000017462298, y: 0.0030350247, z: 0.0000000043073674}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -1272,7 +1287,7 @@ GameObject:
   - component: {fileID: 8829507255201062036}
   m_Layer: 0
   m_Name: hand.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1308,7 +1323,7 @@ GameObject:
   - component: {fileID: 5679848052917967511}
   m_Layer: 0
   m_Name: UpperLegIKBind.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1339,7 +1354,7 @@ GameObject:
   - component: {fileID: 725769593107114882}
   m_Layer: 0
   m_Name: lowerlegiktarget.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1370,7 +1385,7 @@ GameObject:
   - component: {fileID: 2406799733443722906}
   m_Layer: 0
   m_Name: f_index.02.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1402,7 +1417,7 @@ GameObject:
   - component: {fileID: 1583689041854890342}
   m_Layer: 0
   m_Name: falseshin.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1434,7 +1449,7 @@ GameObject:
   - component: {fileID: 7854482645292957831}
   m_Layer: 0
   m_Name: spine.003
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1472,7 +1487,7 @@ GameObject:
   - component: {fileID: 4434385935480287818}
   m_Layer: 0
   m_Name: f_ring.03.L_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1503,7 +1518,7 @@ GameObject:
   - component: {fileID: 4459093646552377165}
   m_Layer: 0
   m_Name: falsefoot.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1534,7 +1549,7 @@ GameObject:
   - component: {fileID: 8258166577559027351}
   m_Layer: 0
   m_Name: thumb.02.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1567,7 +1582,7 @@ GameObject:
   - component: {fileID: 2215302111552362390}
   m_Layer: 0
   m_Name: Collider (1)
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1613,7 +1628,7 @@ GameObject:
   - component: {fileID: 2215302112314010707}
   m_Layer: 0
   m_Name: Collider (3)
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1659,7 +1674,7 @@ GameObject:
   - component: {fileID: 2215302112651178178}
   m_Layer: 0
   m_Name: HoofCollider
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1704,7 +1719,7 @@ GameObject:
   - component: {fileID: 2215302112953771174}
   m_Layer: 0
   m_Name: Collider (2)
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1750,7 +1765,7 @@ GameObject:
   - component: {fileID: 2215302113247874008}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1796,7 +1811,7 @@ GameObject:
   - component: {fileID: 2215302113282390882}
   m_Layer: 0
   m_Name: HoofCollider
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1841,7 +1856,7 @@ GameObject:
   - component: {fileID: 2215302113332908081}
   m_Layer: 0
   m_Name: Collider (4)
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1889,7 +1904,7 @@ GameObject:
   - component: {fileID: 2215302111625269904}
   m_Layer: 0
   m_Name: Tail.006
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1952,7 +1967,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.7550454e-18, y: 0.00087419664, z: -0.000000001760782}
+  m_ConnectedAnchor: {x: -7.5932595e-26, y: 0.0008741975, z: -0.000000002102752}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1997,7 +2012,7 @@ GameObject:
   - component: {fileID: 4623760022691067437}
   m_Layer: 0
   m_Name: thumb.03.L_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2028,7 +2043,7 @@ GameObject:
   - component: {fileID: 9111058419457836905}
   m_Layer: 0
   m_Name: footpad.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2061,7 +2076,7 @@ GameObject:
   - component: {fileID: 2463568020995241927}
   m_Layer: 0
   m_Name: HandIkBind.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2092,7 +2107,7 @@ GameObject:
   - component: {fileID: 437481193580117552}
   m_Layer: 0
   m_Name: LowerLegMCH.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2127,7 +2142,7 @@ GameObject:
   - component: {fileID: 2215302112060765728}
   m_Layer: 0
   m_Name: Tail.008
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2190,7 +2205,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.0852342e-18, y: 0.0011331951, z: -0.000000004569302}
+  m_ConnectedAnchor: {x: 1.0985993e-25, y: 0.0011331943, z: -0.0000000030850065}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2235,7 +2250,7 @@ GameObject:
   - component: {fileID: 4653656864776426505}
   m_Layer: 0
   m_Name: spine.001
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2270,7 +2285,7 @@ GameObject:
   - component: {fileID: 2215302111813655431}
   m_Layer: 0
   m_Name: upper_arm.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2333,7 +2348,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0016811528, y: 0.0032637273, z: -0.00017814642}
+  m_ConnectedAnchor: {x: -0.0016811513, y: 0.0032637292, z: -0.0001781466}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2378,7 +2393,7 @@ GameObject:
   - component: {fileID: 5994442723180619536}
   m_Layer: 0
   m_Name: f_index.03.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2410,7 +2425,7 @@ GameObject:
   - component: {fileID: 3143087868826700123}
   m_Layer: 0
   m_Name: f_middle.02.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2442,7 +2457,7 @@ GameObject:
   - component: {fileID: 2577661643670458363}
   m_Layer: 0
   m_Name: thumb.01.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2474,7 +2489,7 @@ GameObject:
   - component: {fileID: 6928692058028523705}
   m_Layer: 0
   m_Name: Hoof.R_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2505,7 +2520,7 @@ GameObject:
   - component: {fileID: 1395637031569444251}
   m_Layer: 0
   m_Name: UpperHips.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2536,7 +2551,7 @@ GameObject:
   - component: {fileID: 5114866573325254823}
   m_Layer: 0
   m_Name: f_ring.03.R_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2567,7 +2582,7 @@ GameObject:
   - component: {fileID: 4309928496451067563}
   m_Layer: 0
   m_Name: Butt.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2599,7 +2614,7 @@ GameObject:
   - component: {fileID: 803846109646878659}
   m_Layer: 0
   m_Name: UpperLegMCH.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2631,7 +2646,7 @@ GameObject:
   - component: {fileID: 7160051281441908991}
   m_Layer: 0
   m_Name: f_middle.01.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2663,7 +2678,7 @@ GameObject:
   - component: {fileID: 3452423042950037160}
   m_Layer: 0
   m_Name: UpperHips.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2694,7 +2709,7 @@ GameObject:
   - component: {fileID: 8773881701766515347}
   m_Layer: 0
   m_Name: legiktarget.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2725,7 +2740,7 @@ GameObject:
   - component: {fileID: 5651697578387964569}
   m_Layer: 0
   m_Name: falsethigh.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2757,7 +2772,7 @@ GameObject:
   - component: {fileID: 206769391811144393}
   m_Layer: 0
   m_Name: HandIkBind.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2788,7 +2803,7 @@ GameObject:
   - component: {fileID: 5766204298152601555}
   m_Layer: 0
   m_Name: thumb.01.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2821,7 +2836,7 @@ GameObject:
   - component: {fileID: 4649674848661315787}
   m_Layer: 0
   m_Name: Nose Ring
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3004,7 +3019,7 @@ GameObject:
   - component: {fileID: 272553113963462174}
   m_Layer: 0
   m_Name: f_middle.03.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3036,7 +3051,7 @@ GameObject:
   - component: {fileID: 6191033197287421995}
   m_Layer: 0
   m_Name: UpperLegMCH.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3068,7 +3083,7 @@ GameObject:
   - component: {fileID: 3264549155974937553}
   m_Layer: 0
   m_Name: thumb.03.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3100,7 +3115,7 @@ GameObject:
   - component: {fileID: 4371633791259552236}
   m_Layer: 0
   m_Name: thumb.03.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3132,7 +3147,7 @@ GameObject:
   - component: {fileID: 6772636281768048506}
   m_Layer: 0
   m_Name: HandIkBind.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3164,7 +3179,7 @@ GameObject:
   - component: {fileID: 3652940839021969070}
   m_Layer: 0
   m_Name: UpperHips.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3196,7 +3211,7 @@ GameObject:
   - component: {fileID: 2425324416496183739}
   m_Layer: 0
   m_Name: HoofMCH.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3227,7 +3242,7 @@ GameObject:
   - component: {fileID: 4955774423701271524}
   m_Layer: 0
   m_Name: f_pinky.01.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3262,7 +3277,7 @@ GameObject:
   - component: {fileID: 2215302112814503076}
   m_Layer: 0
   m_Name: Tail.002
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3325,7 +3340,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.0012248991, z: -0.0016756757}
+  m_ConnectedAnchor: {x: 9.223041e-19, y: 0.0012248999, z: -0.0016756754}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -3370,7 +3385,7 @@ GameObject:
   - component: {fileID: 6851225395261601923}
   m_Layer: 0
   m_Name: Hoof.L_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3404,7 +3419,7 @@ GameObject:
   - component: {fileID: 2215302112884240738}
   m_Layer: 0
   m_Name: MiddleLeg.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3467,7 +3482,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000036379801, y: 0.0029111449, z: 1.164155e-10}
+  m_ConnectedAnchor: {x: 1.1641536e-10, y: 0.0029111444, z: 5.820775e-11}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -3512,7 +3527,7 @@ GameObject:
   - component: {fileID: 3893651935322227628}
   m_Layer: 0
   m_Name: f_index.03.L_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3543,7 +3558,7 @@ GameObject:
   - component: {fileID: 2290081650683152634}
   m_Layer: 0
   m_Name: Neck
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3575,7 +3590,7 @@ GameObject:
   - component: {fileID: 2753060899918063143}
   m_Layer: 0
   m_Name: HoofIkBind.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3606,7 +3621,7 @@ GameObject:
   - component: {fileID: 4637829841082675264}
   m_Layer: 0
   m_Name: legiktarget.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3638,7 +3653,7 @@ GameObject:
   - component: {fileID: 5595963387789772098}
   m_Layer: 0
   m_Name: thumb.02.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3670,7 +3685,7 @@ GameObject:
   - component: {fileID: 5067660187668278998}
   m_Layer: 0
   m_Name: lowerlegiktarget.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3702,7 +3717,7 @@ GameObject:
   - component: {fileID: 6889600400803720121}
   m_Layer: 0
   m_Name: shoulder.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3734,7 +3749,7 @@ GameObject:
   - component: {fileID: 4274405542314966571}
   m_Layer: 0
   m_Name: UpperLegIKBind.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3765,7 +3780,7 @@ GameObject:
   - component: {fileID: 8215945281063494696}
   m_Layer: 0
   m_Name: HandIkTarget.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3799,7 +3814,7 @@ GameObject:
   - component: {fileID: 2215302111561929761}
   m_Layer: 0
   m_Name: forearm.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3862,7 +3877,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000000053114495, y: 0.0030350229, z: -4.6566134e-10}
+  m_ConnectedAnchor: {x: -0.0000000024010662, y: 0.0030350233, z: -4.6566134e-10}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -3907,7 +3922,7 @@ GameObject:
   - component: {fileID: 2315441344326255700}
   m_Layer: 0
   m_Name: f_index.02.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3939,7 +3954,7 @@ GameObject:
   - component: {fileID: 2870372284431943459}
   m_Layer: 0
   m_Name: Ankle.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3971,7 +3986,7 @@ GameObject:
   - component: {fileID: 1266626779277288942}
   m_Layer: 0
   m_Name: hand.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4010,7 +4025,7 @@ GameObject:
   - component: {fileID: 2215302112255953920}
   m_Layer: 0
   m_Name: Shin.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4073,7 +4088,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 3.2014214e-10, y: 0.0031451122, z: -0.00000000349246}
+  m_ConnectedAnchor: {x: -1.1641532e-10, y: 0.0031451115, z: -0.0000000030267988}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -4118,7 +4133,7 @@ GameObject:
   - component: {fileID: 8595353565424683236}
   m_Layer: 0
   m_Name: lowerlegiktarget.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4153,7 +4168,7 @@ GameObject:
   - component: {fileID: 2215302113105225456}
   m_Layer: 0
   m_Name: thigh.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4216,7 +4231,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0013226666, y: 0.00028774008, z: -0.0004533234}
+  m_ConnectedAnchor: {x: 0.0013226706, y: 0.000287741, z: -0.00045332307}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -4261,7 +4276,7 @@ GameObject:
   - component: {fileID: 5966229984111891036}
   m_Layer: 0
   m_Name: HeadLookAtTarget
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4293,7 +4308,7 @@ GameObject:
   - component: {fileID: 3982884883064410650}
   m_Layer: 0
   m_Name: f_pinky.03.L_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4324,7 +4339,7 @@ GameObject:
   - component: {fileID: 4690565204861965101}
   m_Layer: 0
   m_Name: footpad.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4357,7 +4372,7 @@ GameObject:
   - component: {fileID: 8320163024441629724}
   m_Layer: 0
   m_Name: f_index.01.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4392,7 +4407,7 @@ GameObject:
   - component: {fileID: 2215302111506809395}
   m_Layer: 0
   m_Name: Tail.004
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4455,7 +4470,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.3521731e-18, y: 0.0008606833, z: -0.0000000026338967}
+  m_ConnectedAnchor: {x: -2.3587572e-25, y: 0.0008606833, z: -0.0000000026338967}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -4500,7 +4515,7 @@ GameObject:
   - component: {fileID: 2825501187199769594}
   m_Layer: 0
   m_Name: Neck.001_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4534,7 +4549,7 @@ GameObject:
   - component: {fileID: 2215302112615089051}
   m_Layer: 0
   m_Name: spine.002
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4644,7 +4659,7 @@ GameObject:
   - component: {fileID: 2215302113261284706}
   m_Layer: 0
   m_Name: Tail.005
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4707,7 +4722,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.5806063e-18, y: 0.0010979124, z: -0.0000000020918378}
+  m_ConnectedAnchor: {x: -2.9242127e-25, y: 0.0010979117, z: -0.0000000021609594}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -4752,7 +4767,7 @@ GameObject:
   - component: {fileID: 3341325744868815602}
   m_Layer: 0
   m_Name: HoofMCH.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4784,7 +4799,7 @@ GameObject:
   - component: {fileID: 9164771457409547861}
   m_Layer: 0
   m_Name: legiktarget.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4816,7 +4831,7 @@ GameObject:
   - component: {fileID: 652271292877897452}
   m_Layer: 0
   m_Name: HipController
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4853,7 +4868,7 @@ GameObject:
   - component: {fileID: 5074832089793541026}
   m_Layer: 0
   m_Name: f_middle.03.R_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4884,7 +4899,7 @@ GameObject:
   - component: {fileID: 5377436265944489652}
   m_Layer: 0
   m_Name: falsefoot.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4919,7 +4934,7 @@ GameObject:
   - component: {fileID: 2215302112052512741}
   m_Layer: 0
   m_Name: Tail.009
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4982,7 +4997,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.2181398e-18, y: 0.0010252369, z: -0.0000000027139322}
+  m_ConnectedAnchor: {x: 3.9420326e-25, y: 0.0010252369, z: -0.0000000027139322}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5027,7 +5042,7 @@ GameObject:
   - component: {fileID: 7466466070864795436}
   m_Layer: 0
   m_Name: UpperLegMCH.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5058,11 +5073,11 @@ GameObject:
   - component: {fileID: 6094074516818078295}
   m_Layer: 0
   m_Name: HumanBased_Male_Armature
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6094074516818078295
 Transform:
   m_ObjectHideFlags: 0
@@ -5099,7 +5114,7 @@ GameObject:
   - component: {fileID: 5910684565794098612}
   m_Layer: 0
   m_Name: thumb.03.R_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5130,7 +5145,7 @@ GameObject:
   - component: {fileID: 5181500673013987053}
   m_Layer: 0
   m_Name: HandIkTarget.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5161,7 +5176,7 @@ GameObject:
   - component: {fileID: 5044129075291772093}
   m_Layer: 0
   m_Name: f_pinky.01.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5193,7 +5208,7 @@ GameObject:
   - component: {fileID: 5529300543481277182}
   m_Layer: 0
   m_Name: f_middle.01.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5225,7 +5240,7 @@ GameObject:
   - component: {fileID: 6805846242315048695}
   m_Layer: 0
   m_Name: HoofIkBind.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5256,7 +5271,7 @@ GameObject:
   - component: {fileID: 5731503494094766759}
   m_Layer: 0
   m_Name: f_pinky.02.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5288,7 +5303,7 @@ GameObject:
   - component: {fileID: 3504060696178201378}
   m_Layer: 0
   m_Name: UpperTailControl_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5319,7 +5334,7 @@ GameObject:
   - component: {fileID: 4407941078447412894}
   m_Layer: 0
   m_Name: HoofMCH.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5351,7 +5366,7 @@ GameObject:
   - component: {fileID: 5416082960035612159}
   m_Layer: 0
   m_Name: f_middle.03.L_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5385,7 +5400,7 @@ GameObject:
   - component: {fileID: 2215302112846030137}
   m_Layer: 0
   m_Name: Tail.007
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5448,7 +5463,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.9191016e-18, y: 0.0009110888, z: -0.0000000020663722}
+  m_ConnectedAnchor: {x: 1.1955345e-25, y: 0.0009110888, z: -0.0000000020663722}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5493,7 +5508,7 @@ GameObject:
   - component: {fileID: 3758716922670676415}
   m_Layer: 0
   m_Name: UpperBodyRotation
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5525,7 +5540,7 @@ GameObject:
   - component: {fileID: 2675446521309179555}
   m_Layer: 0
   m_Name: falsefoot.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5557,7 +5572,7 @@ GameObject:
   - component: {fileID: 7601632561202897971}
   m_Layer: 0
   m_Name: LowerLegMCH.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5589,7 +5604,7 @@ GameObject:
   - component: {fileID: 7508553661819695801}
   m_Layer: 0
   m_Name: Butt.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5620,7 +5635,7 @@ GameObject:
   - component: {fileID: 6880747773083553276}
   m_Layer: 0
   m_Name: f_middle.02.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5652,7 +5667,7 @@ GameObject:
   - component: {fileID: 6989019435536138193}
   m_Layer: 0
   m_Name: Neck.001
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5684,7 +5699,7 @@ GameObject:
   - component: {fileID: 5435849824862512483}
   m_Layer: 0
   m_Name: f_ring.03.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5716,7 +5731,7 @@ GameObject:
   - component: {fileID: 8143146167279910629}
   m_Layer: 0
   m_Name: lowerlegiktarget.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5747,7 +5762,7 @@ GameObject:
   - component: {fileID: 7035233424415238411}
   m_Layer: 0
   m_Name: Ankle.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5779,7 +5794,7 @@ GameObject:
   - component: {fileID: 1221959995953099821}
   m_Layer: 0
   m_Name: HoofMCH.l_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5810,7 +5825,7 @@ GameObject:
   - component: {fileID: 2082278159049757305}
   m_Layer: 0
   m_Name: UpperLegIKBind.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5842,7 +5857,7 @@ GameObject:
   - component: {fileID: 349321625001988046}
   m_Layer: 0
   m_Name: HandIkTarget.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5874,7 +5889,7 @@ GameObject:
   - component: {fileID: 5254681463733691295}
   m_Layer: 0
   m_Name: HeadLookAtTarget_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5905,7 +5920,7 @@ GameObject:
   - component: {fileID: 8739863724636764670}
   m_Layer: 0
   m_Name: falsefoot.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5936,7 +5951,7 @@ GameObject:
   - component: {fileID: 8884494185212631566}
   m_Layer: 0
   m_Name: HoofIkBind.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5968,7 +5983,7 @@ GameObject:
   - component: {fileID: 5144529425297764278}
   m_Layer: 0
   m_Name: UpperHips.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6000,7 +6015,7 @@ GameObject:
   - component: {fileID: 6120777537751827166}
   m_Layer: 0
   m_Name: f_ring.01.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6032,7 +6047,7 @@ GameObject:
   - component: {fileID: 635887089404256077}
   m_Layer: 0
   m_Name: f_index.03.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6064,7 +6079,7 @@ GameObject:
   - component: {fileID: 3109945839908074797}
   m_Layer: 0
   m_Name: f_ring.02.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6096,7 +6111,7 @@ GameObject:
   - component: {fileID: 4764191183561722040}
   m_Layer: 0
   m_Name: f_middle.03.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6128,7 +6143,7 @@ GameObject:
   - component: {fileID: 4891218761009009742}
   m_Layer: 0
   m_Name: f_ring.01.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6160,7 +6175,7 @@ GameObject:
   - component: {fileID: 6128718003287324300}
   m_Layer: 0
   m_Name: Tail.009_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6191,7 +6206,7 @@ GameObject:
   - component: {fileID: 5855044178647533852}
   m_Layer: 0
   m_Name: f_pinky.03.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6223,7 +6238,7 @@ GameObject:
   - component: {fileID: 8082501439035416318}
   m_Layer: 0
   m_Name: UpperLegIKBind.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6255,7 +6270,7 @@ GameObject:
   - component: {fileID: 8332827551142658979}
   m_Layer: 0
   m_Name: Butt.r
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6287,7 +6302,7 @@ GameObject:
   - component: {fileID: 7910955878340850002}
   m_Layer: 0
   m_Name: f_index.03.R_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6318,7 +6333,7 @@ GameObject:
   - component: {fileID: 6190778197952173362}
   m_Layer: 0
   m_Name: f_index.01.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6352,7 +6367,7 @@ GameObject:
   - component: {fileID: 2215302112168646761}
   m_Layer: 0
   m_Name: ForwardHead
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6406,7 +6421,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.004456196, z: 0.000050801675}
+  m_ConnectedAnchor: {x: 9.524374e-20, y: 0.004456196, z: 0.000050801675}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -6451,7 +6466,7 @@ GameObject:
   - component: {fileID: 5450084747149431793}
   m_Layer: 0
   m_Name: f_ring.02.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6483,7 +6498,7 @@ GameObject:
   - component: {fileID: 6625051970536061869}
   m_Layer: 0
   m_Name: LowerTailControl_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6514,7 +6529,7 @@ GameObject:
   - component: {fileID: 6902063772332119515}
   m_Layer: 0
   m_Name: HandIkBind.l
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6546,7 +6561,7 @@ GameObject:
   - component: {fileID: 8801688755079714396}
   m_Layer: 0
   m_Name: f_pinky.03.R_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6580,7 +6595,7 @@ GameObject:
   - component: {fileID: 2215302113513966628}
   m_Layer: 0
   m_Name: MiddleLeg.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6643,7 +6658,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000003725294, y: 0.0029111472, z: 5.8207855e-10}
+  m_ConnectedAnchor: {x: -2.0372701e-10, y: 0.0029111472, z: 5.238707e-10}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -6688,7 +6703,7 @@ GameObject:
   - component: {fileID: 3257944703462561674}
   m_Layer: 0
   m_Name: UpperLegMCH.r_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6721,7 +6736,7 @@ GameObject:
   - component: {fileID: 2215302112752587369}
   m_Layer: 0
   m_Name: Hips
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6791,7 +6806,7 @@ GameObject:
   - component: {fileID: 4971501964473144180}
   m_Layer: 0
   m_Name: f_pinky.02.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6823,7 +6838,7 @@ GameObject:
   - component: {fileID: 5078294669257013099}
   m_Layer: 0
   m_Name: f_pinky.03.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6858,7 +6873,7 @@ GameObject:
   - component: {fileID: 2215302111747840523}
   m_Layer: 0
   m_Name: thigh.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6921,7 +6936,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0013226666, y: 0.00028774064, z: -0.0004533222}
+  m_ConnectedAnchor: {x: -0.0013226706, y: 0.00028774064, z: -0.0004533222}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -6966,7 +6981,7 @@ GameObject:
   - component: {fileID: 7974839862475468246}
   m_Layer: 0
   m_Name: shoulder.R
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6998,7 +7013,7 @@ GameObject:
   - component: {fileID: 5219827295800647213}
   m_Layer: 0
   m_Name: f_ring.03.L
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7033,7 +7048,7 @@ GameObject:
   - component: {fileID: 2215302112117176062}
   m_Layer: 0
   m_Name: Tail.003
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7096,7 +7111,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.1715045e-18, y: 0.0011393562, z: -0.0000000014988475}
+  m_ConnectedAnchor: {x: -9.305782e-25, y: 0.0011393557, z: -0.0000000012369129}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -7141,7 +7156,7 @@ GameObject:
   - component: {fileID: 5516233890209931884}
   m_Layer: 0
   m_Name: UpperBodyRotation_end
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

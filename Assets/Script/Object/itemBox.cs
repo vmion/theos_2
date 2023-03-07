@@ -29,7 +29,7 @@ public class itemBox : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log(item.name);            
+            //Debug.Log(item.name);            
             CharInventory.AddCharItem(item);
             panel.SetActive(false);            
             Destroy(gameObject);

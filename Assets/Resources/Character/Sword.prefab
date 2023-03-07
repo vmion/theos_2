@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 461053378970572895}
   - component: {fileID: 2414222776972356757}
   - component: {fileID: 4734779995834716752}
-  - component: {fileID: 7345360027938650483}
   - component: {fileID: -2143131500637849499}
+  - component: {fileID: 6229546751589255186}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -102,7 +102,19 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0.0025, y: 0.27, z: 0.0017}
---- !u!54 &7345360027938650483
+--- !u!114 &-2143131500637849499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215921906684497216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4655b8640ec9a7342a7d54bfdc6ff7af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &6229546751589255186
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,24 +130,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-2143131500637849499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4215921906684497216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4655b8640ec9a7342a7d54bfdc6ff7af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster:
-    serializedVersion: 2
-    m_Bits: 256
-  maxDamage: 100
-  swordForce: 100
-  swordRange: 3
 --- !u!1 &4999460973545224094
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719508975972246751}
   - component: {fileID: 5581335477483510495}
+  - component: {fileID: 2487818296274211849}
   m_Layer: 0
   m_Name: Effect
   m_TagString: Untagged
@@ -294,3 +289,16 @@ TrailRenderer:
   m_MinVertexDistance: 0.01
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!65 &2487818296274211849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4999460973545224094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 1.3, z: 0.1}
+  m_Center: {x: 0.06, y: 0, z: 0}
