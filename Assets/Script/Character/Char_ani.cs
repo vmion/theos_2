@@ -36,7 +36,8 @@ public class Char_ani :  MonoBehaviour
 
     public GameObject marker;
     public GameObject minimpaCam;
-    
+
+    public Image mp;
     void Start()
     {
         Char = Character_Manager.instance.transform.GetChild(0);
@@ -109,6 +110,7 @@ public class Char_ani :  MonoBehaviour
             {
                 StartCoroutine(CoolTime(Skill_2, 3));
                 ani.SetTrigger("Swing");
+                mp.fillAmount -= 0.1f;
             }
             else
             {
@@ -121,6 +123,7 @@ public class Char_ani :  MonoBehaviour
             {
                 StartCoroutine(CoolTime(Skill_3, 5));
                 ani.SetTrigger("Sting");
+                mp.fillAmount -= 0.15f;
             }
             else
             {
@@ -137,6 +140,7 @@ public class Char_ani :  MonoBehaviour
                 Vector3 rotation = new Vector3(-90, 0, 0);
                 ParticleSystem instance = Instantiate(buff, transform.position, Quaternion.Euler(rotation));
                 Destroy(instance.gameObject, instance.main.duration);
+                mp.fillAmount -= 0.2f;
             }
             else
             {
@@ -194,5 +198,9 @@ public class Char_ani :  MonoBehaviour
         marker.transform.forward = -(Char.transform.forward);
         minimpaCam.transform.position = new Vector3(Char.transform.position.x, minimpaCam.transform.position.y,
             Char.transform.position.z);
+        if(mp.fillAmount < 1f)
+        {
+            mp.fillAmount += 0.0001f * Time.deltaTime;
+        }
     }    
 }

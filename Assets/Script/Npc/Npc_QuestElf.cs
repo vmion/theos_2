@@ -8,13 +8,14 @@ public class Npc_QuestElf : MonoBehaviour
     public QuestManager questManager;
     void Start()
     {
-        objData = GetComponent<Obj_Data>();        
-    }
-    void Update()
-    {
+        objData = GetComponent<Obj_Data>();
         if (questManager.questId == 10)
         {
             objData.isQuest = true;
         }
+    }
+    void Update()
+    {
+        
     }
 }

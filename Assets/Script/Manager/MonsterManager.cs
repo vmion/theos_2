@@ -107,9 +107,10 @@ public class MonsterManager : MonoBehaviour
        for(int i = 0; i < markers.Length; i++)
        {
             Transform markT = markers[i].gameObject.transform;
-            Transform tmpMob = mobs[i].gameObject.transform;
+            Transform tmpMob = mobs[i].gameObject.transform;            
             markT.position = new Vector3(tmpMob.transform.position.x, markT.position.y,
                 tmpMob.transform.position.z);
+            markT.SetParent(tmpMob);
         }
     }
 }

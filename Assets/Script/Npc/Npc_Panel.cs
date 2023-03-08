@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Npc_Panel : MonoBehaviour
 {    
-    Collider NpcCollider;
+    public Collider NpcCollider;
     public GameObject panel;    
     Collider Player;
     public Text panelName;
-    Obj_Data objData;
+    public Obj_Data objData;
     public QuestManager questManager;
     public TalkManager talkManager;    
     public int talkIndex;
@@ -17,10 +17,8 @@ public class Npc_Panel : MonoBehaviour
     public GameObject questButton;
     //public Text questTitle;
     void Start()
-    {
-        NpcCollider = GetComponent<Collider>();
-        Player = Character_Manager.playerCollider;
-        objData = GetComponent<Obj_Data>();
+    {        
+        Player = Character_Manager.playerCollider;        
         talkIndex = 0;
     }
     private void OnTriggerStay(Collider other)
@@ -29,6 +27,7 @@ public class Npc_Panel : MonoBehaviour
         {
             panel.SetActive(true);
             panelName.text = " " + NpcCollider.name;
+            Talk(objData.id);
         }        
     }
     private void OnTriggerExit(Collider other)
@@ -42,31 +41,29 @@ public class Npc_Panel : MonoBehaviour
     {
         int questTalkIndex = questManager.GetQuestTalkIndex(id);
         string talkData = talkManager.GetTalk(id + questTalkIndex, talkIndex);   
-
+        
         //End Talk
         if (talkData == null)
         {
-            talkIndex = 0;
+            talkIndex = 0;            
             //questTitle.text = questManager.CheckQuest(id);
             return;
         }
-
+        
         //Continue Talk
-        if (objData.isQuest == true)
+        if (objData.isQuest == true || objData.isComplete == true)
         {            
             talkText.text = talkData.Split(":")[0];
             questButton.SetActive(true);
-        }      
+        }
+        else
+        {
+            talkText.text = talkData.Split(":")[0];
+            questButton.SetActive(false);
+        }
     }
     void Update()
     {
-        if(panel.activeSelf == true)
-        {
-            Talk(objData.id);
-        }
-        if (objData.isComplete == true)
-        {
-            //talkIndex = 1;
-        }
+       
     }    
 }

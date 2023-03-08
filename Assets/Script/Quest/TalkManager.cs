@@ -17,7 +17,11 @@ public class TalkManager : MonoBehaviour
     {
         //대사 생성 (obj id, 대화 )
         talkData.Add(1000, new string[] { "안녕하세요:", });
+        talkData.Add(1020, new string[] { "안녕하세요:", });
+        talkData.Add(1021, new string[] { "안녕하세요:", });
         talkData.Add(2000, new string[] { "우리 마을을 찾아주셔서 감사합니다.:", });
+        talkData.Add(2010, new string[] { "우리 마을을 찾아주셔서 감사합니다.:", });
+        talkData.Add(2011, new string[] { "우리 마을을 찾아주셔서 감사합니다.:", });
 
 
         //퀘스트용 대화(obj id + quest id + questIndex(순서번호))
@@ -27,7 +31,7 @@ public class TalkManager : MonoBehaviour
 
         talkData.Add(1000 + 10, new string[] { "갑작스럽지만 도움이 필요합니다." +
             " \n숲에서 몬스터를 사냥하고 짐을 찾아주시겠어요 ?:" });                           
-        talkData.Add(1000 + 10 + 1, new string[] { "감사합니다! 덕분에 다시 장사를 시작할 수 있겠네요!:"});        
+        talkData.Add(1000 + 10 + 1, new string[] { "감사합니다! \n촌장님도 뭔가 고민이 있는 것 같은데 가보시겠어요?:"});        
         
         //20번 퀘스트
         talkData.Add(2000 + 20, new string[] { "숲을 소탕해준 얘기는 들었습니다. \n최근 발생한 미궁의 해결도 부탁드려도 될까요?:" });         
@@ -36,7 +40,7 @@ public class TalkManager : MonoBehaviour
     
     public string GetTalk(int id, int talkIndex)
     {
-        
+        /*
         //1. 해당 퀘스트 id에서 퀘스트index(순서)에 해당하는 대사가 없음
         if (!talkData.ContainsKey(id))
         {
@@ -48,7 +52,7 @@ public class TalkManager : MonoBehaviour
             else
                 return GetTalk(id - id % 10, talkIndex);//GET FIRST QUEST TALK
         }
-        
+        */
         //2. 해당 퀘스트 id에서 퀘스트index(순서)에 해당하는 대사가 있음
         if (talkIndex == talkData[id].Length)
             return null;

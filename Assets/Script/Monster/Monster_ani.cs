@@ -37,9 +37,7 @@ public class Monster_ani : MonoBehaviour
                 CharInventory.AddCharItem(item);
                 Vector3 particlePos = new Vector3(0, 1, 0);
                 ParticleSystem cloneParticle = Instantiate(particle, transform.position + particlePos,
-                    transform.rotation);
-                //AudioSource deathAudio = cloneParticle.GetComponent<AudioSource>();
-                //deathAudio.Play();
+                    transform.rotation);                
 
                 Destroy(cloneParticle.gameObject, cloneParticle.main.duration);
                 gameObject.SetActive(false);
@@ -67,21 +65,7 @@ public class Monster_ani : MonoBehaviour
         else
         {
             Mani.SetBool("isMoving", true);
-        }
-        /*
-        if (hp <= 0)
-        {            
-            CharInventory.AddCharItem(item);
-            Vector3 particlePos = new Vector3(0, 1, 0);
-            ParticleSystem cloneParticle = Instantiate(particle, transform.position + particlePos,
-                transform.rotation);
-            //AudioSource deathAudio = cloneParticle.GetComponent<AudioSource>();
-            //deathAudio.Play();
-
-            Destroy(cloneParticle.gameObject, cloneParticle.main.duration);
-            gameObject.SetActive(false);
-        }
-        */
+        }        
     }   
     
     public void AutoMove()

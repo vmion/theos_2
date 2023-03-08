@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class Boss_Hp : MonoBehaviour
 {
     public GameObject Boss;    
-    public GameObject bossHP;    
+    public GameObject bossHP;
+    Boss_ani bossHp;
+    public Image hp;
     private void OnBecameVisible()
     {
-        bossHP.SetActive(true);
+        bossHP.SetActive(true);        
     } 
 }

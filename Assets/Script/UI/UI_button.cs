@@ -15,16 +15,16 @@ public class UI_button : MonoBehaviour
         child = player.transform.GetChild(0).gameObject;
     }
     public void CloseButton()
-    {        
-        Time.timeScale = 1f;
-        Obj_Portal.CamX = false;
+    {
         ui.SetActive(false);
+        Time.timeScale = 1f;
+        Obj_Portal.CamX = false;        
     }
     public void OpenButton()
-    {        
-        Time.timeScale = 0f;
-        Obj_Portal.CamX = true;
+    {
         ui.SetActive(true);
+        Time.timeScale = 0f;
+        Obj_Portal.CamX = true;        
     }
     public void OpenAutoUI()
     {
@@ -42,26 +42,25 @@ public class UI_button : MonoBehaviour
     }
     
     public void CheckPortal_Village()
-    {        
+    {
+        ui.SetActive(false);
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
-        LoadingManager.LoadScene("_01_Village");
-        ui.SetActive(false);
+        LoadingManager.LoadScene("_01_Village");        
     }
     public void CheckPortal_Forest()
-    {        
+    {
+        ui.SetActive(false);
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
-        LoadingManager.LoadScene("_02_Forest");
-        ui.SetActive(false);
+        LoadingManager.LoadScene("_02_Forest");        
     }
     public void CheckPortal_Labyrinth()
     {
-        
+        ui.SetActive(false);
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
-        LoadingManager.LoadScene("_03_Labyrinth");
-        ui.SetActive(false);
+        LoadingManager.LoadScene("_03_Labyrinth");        
     }
     public void AutoCombat()
     {

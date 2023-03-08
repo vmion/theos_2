@@ -7,11 +7,7 @@ public class NpcState : MonoBehaviour
     public Obj_Data questState;
     public GameObject objQuest;
     public GameObject objComplete;
-    public QuestManager questLevel;
-    //Äù½ºÆ® ½Â³« ¿©ºÎ
-    bool isOkay;
-    //Äù½ºÆ® ¿Ï·á ¿©ºÎ
-    bool isCheck;    
+    public QuestManager questLevel;    
    
     void Update()
     {        
@@ -26,6 +22,7 @@ public class NpcState : MonoBehaviour
         if(questState.isComplete == true)
         {
             objComplete.SetActive(true);
+            questLevel.questActionIndex = 1;
         }
         else if(questState.isComplete == false)
         {

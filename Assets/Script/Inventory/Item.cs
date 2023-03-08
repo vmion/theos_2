@@ -17,4 +17,5 @@ public class Item : ScriptableObject
     public Sprite itemImage;
     public Sprite itemExplain;
     public ItemType itemType;
+    public bool itemCountable;
 }

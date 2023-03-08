@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UI_fillamount : MonoBehaviour
 {
     public Image image;
-    public TextMeshProUGUI text;
+    public Text text;
     float consume;    
     void Start()
     {

@@ -9,6 +9,8 @@ public class Boss_ani : MonoBehaviour
     Vector3 nextMove;
     Vector3 Center;
 
+    public float hp = 0f;
+    public ParticleSystem particle;
     void Awake()
     {
         Mani = GetComponent<Animator>();
@@ -18,7 +20,22 @@ public class Boss_ani : MonoBehaviour
     {
         Invoke("AutoMove", 3f);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "weapon")
+        {                    
+            hp -= 20f;
+            if (hp <= 0)
+            {                
+                Vector3 particlePos = new Vector3(0, 1, 0);
+                ParticleSystem cloneParticle = Instantiate(particle, transform.position + particlePos,
+                    transform.rotation);
 
+                Destroy(cloneParticle.gameObject, cloneParticle.main.duration);
+                gameObject.SetActive(false);
+            }
+        }
+    }
     void Update()
     {
         Vector3 MPos = transform.position;
@@ -44,6 +61,7 @@ public class Boss_ani : MonoBehaviour
 
         marker.transform.position = new Vector3(transform.position.x, marker.transform.position.y,
             transform.position.z);
+        marker.transform.SetParent(gameObject.transform);
     }
 
     public void AutoMove()
