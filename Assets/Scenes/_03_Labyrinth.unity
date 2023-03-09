@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 1
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 35
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.33333334
+    cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -2189,8 +2189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Boss: {fileID: 5847806013762988451}
-  bossHP: {fileID: 1902876087}
   hp: {fileID: 0}
+  hpText: {fileID: 0}
 --- !u!4 &411761665
 Transform:
   m_ObjectHideFlags: 0
@@ -8024,7 +8024,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100%
+  m_Text: ddd
 --- !u!1 &1418711352
 GameObject:
   m_ObjectHideFlags: 0
@@ -11298,7 +11298,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.48
+  m_FillAmount: 0.648
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -11400,7 +11400,7 @@ GameObject:
   - component: {fileID: 1921470065}
   - component: {fileID: 1921470068}
   - component: {fileID: 1921470067}
-  - component: {fileID: 1921470066}
+  - component: {fileID: 1921470069}
   m_Layer: 5
   m_Name: BossHP_bar
   m_TagString: Untagged
@@ -11430,20 +11430,6 @@ RectTransform:
   m_AnchoredPosition: {x: 32, y: 0}
   m_SizeDelta: {x: 525, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1921470066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921470064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d91da3ee0a3609e408a7f83fecee4d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1902554727}
-  text: {fileID: 1405005761}
 --- !u!114 &1921470067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11482,6 +11468,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921470064}
   m_CullTransparentMesh: 1
+--- !u!114 &1921470069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921470064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bca71e0e591024eb7f7a469d68a584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boss: {fileID: 5847806013762988451}
+  hp: {fileID: 1902554727}
+  hpText: {fileID: 1405005761}
 --- !u!1 &1938517010
 GameObject:
   m_ObjectHideFlags: 0
@@ -14612,7 +14613,7 @@ GameObject:
   - component: {fileID: 1714227358521184376}
   m_Layer: 0
   m_Name: HumanBased_Male_Armature
-  m_TagString: Boss
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16743,7 +16744,7 @@ GameObject:
   - component: {fileID: 966225189432660658}
   m_Layer: 0
   m_Name: Male
-  m_TagString: Boss
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16762,11 +16763,11 @@ GameObject:
   - component: {fileID: 904212997586676065}
   - component: {fileID: 5433680842346065445}
   - component: {fileID: 7351943295829512561}
-  - component: {fileID: 7351943295829512562}
   - component: {fileID: 7351943295829512564}
   - component: {fileID: 7351943295829512563}
   - component: {fileID: 7351943295829512565}
   - component: {fileID: 7351943295829512566}
+  - component: {fileID: 7351943295829512567}
   m_Layer: 3
   m_Name: Boss
   m_TagString: Boss
@@ -19551,21 +19552,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7351943295829512562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5847806013762988451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20bca71e0e591024eb7f7a469d68a584, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Boss: {fileID: 5847806013762988451}
-  bossHP: {fileID: 1902876087}
-  hp: {fileID: 0}
 --- !u!64 &7351943295829512563
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19635,7 +19621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marker: {fileID: 37183383}
-  hp: 0
+  hp: 100
   particle: {fileID: 19831790, guid: f5c6ef8c53343974da57190e8a911785, type: 3}
 --- !u!136 &7351943295829512566
 CapsuleCollider:
@@ -19651,6 +19637,18 @@ CapsuleCollider:
   m_Height: 4.5
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &7351943295829512567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5847806013762988451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa46ce594dbf20449a6374214295c60d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7384127269174432908
 Transform:
   m_ObjectHideFlags: 0
@@ -19855,7 +19853,7 @@ GameObject:
   - component: {fileID: 278764047893813988}
   m_Layer: 0
   m_Name: Nose Ring
-  m_TagString: Boss
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

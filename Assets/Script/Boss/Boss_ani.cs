@@ -9,7 +9,7 @@ public class Boss_ani : MonoBehaviour
     Vector3 nextMove;
     Vector3 Center;
 
-    public float hp = 0f;
+    public float hp = 100f;
     public ParticleSystem particle;
     void Awake()
     {
@@ -18,9 +18,9 @@ public class Boss_ani : MonoBehaviour
     }
     void Start()
     {
-        Invoke("AutoMove", 3f);
-    }
-    private void OnTriggerEnter(Collider other)
+        //Invoke("AutoMove", 3f);
+    }    
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "weapon")
         {                    
@@ -38,6 +38,7 @@ public class Boss_ani : MonoBehaviour
     }
     void Update()
     {
+        /*
         Vector3 MPos = transform.position;
         MPos.x = Mathf.Clamp(MPos.x, Center.x - 5f, Center.x + 5f);
         MPos.z = Mathf.Clamp(MPos.z, Center.z - 5f, Center.z + 5f);
@@ -58,12 +59,12 @@ public class Boss_ani : MonoBehaviour
         {
             Mani.SetBool("isMoving", true);
         }
-
+        */
         marker.transform.position = new Vector3(transform.position.x, marker.transform.position.y,
             transform.position.z);
         marker.transform.SetParent(gameObject.transform);
     }
-
+    /*
     public void AutoMove()
     {
         nextMove.x = (int)Random.Range(-1.5f, 1.5f);
@@ -85,5 +86,5 @@ public class Boss_ani : MonoBehaviour
         float time = Random.Range(2f, 5f);
         Invoke("AutoMove", time);
     }
-    
+    */
 }

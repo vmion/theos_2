@@ -5,12 +5,21 @@ using UnityEngine.UI;
 
 public class Boss_Hp : MonoBehaviour
 {
-    public GameObject Boss;    
-    public GameObject bossHP;
-    Boss_ani bossHp;
+    public GameObject Boss;       
+    
     public Image hp;
-    private void OnBecameVisible()
+    public Text hpText;
+    float hpCount;
+    void Start()
     {
-        bossHP.SetActive(true);        
-    } 
+        hp.fillAmount = 1f;
+        hpText.text = "100%";
+        hpCount = Boss.GetComponent<Boss_ani>().hp;
+    }
+    void Update()
+    {
+        hpCount = Boss.GetComponent<Boss_ani>().hp;
+        hp.fillAmount = hpCount / 100f;
+        hpText.text = (hp.fillAmount * 100).ToString() + "%";
+    }
 }

@@ -155,6 +155,8 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_FSM.cs" />
+    <Compile Include="Assets\Script\FSM\Boss.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />
