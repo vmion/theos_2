@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3913936177189789236}
   m_Layer: 8
   m_Name: f_middle.02.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1598780831141685498}
   m_Layer: 8
   m_Name: TailIk.003
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 7572088130753987594}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3559456794669002153}
   m_Layer: 8
   m_Name: Eyebrow_Female_03
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 3923518768399430172}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 9135288846670834935}
   m_Layer: 8
   m_Name: Tail.004
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 2044806152620913469}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 5064319450748464866}
   m_Layer: 8
   m_Name: spine.003
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 1830443620914124393}
   m_Layer: 8
   m_Name: Armature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 6745443001092997861}
   m_Layer: 8
   m_Name: thumb.02.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 3690696546483792586}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 1962479661670962335}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 7544123648614551033}
   m_Layer: 8
   m_Name: TailIk.009
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 4979287075863568596}
   m_Layer: 8
   m_Name: PT_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 3517947960562408987}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 9135288846120198543}
   m_Layer: 8
   m_Name: Tail.013
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 7303093762146595438}
   m_Layer: 8
   m_Name: Female_Brow_01
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 3954739162564057103}
   m_Layer: 8
   m_Name: Butt.l_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 2091538906893102205}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 3866417217910479137}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 9135288846522924733}
   m_Layer: 8
   m_Name: Hips
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 254645664245425066}
   m_Layer: 8
   m_Name: TailIk.001_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -998,7 +998,7 @@ GameObject:
   - component: {fileID: 5989913472341838608}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 8216176461809582529}
   m_Layer: 8
   m_Name: HandIkBind.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 7744757528912663486}
   m_Layer: 8
   m_Name: f_middle.03.R_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 6583882740718964500}
   m_Layer: 8
   m_Name: HandIkTarget.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 4685990661346158745}
   m_Layer: 8
   m_Name: falsethigh.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1156,7 +1156,7 @@ GameObject:
   - component: {fileID: 7872127782808027186}
   m_Layer: 8
   m_Name: TailIk.007_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1187,7 +1187,7 @@ GameObject:
   - component: {fileID: 3963724582559305003}
   m_Layer: 8
   m_Name: Breast.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1220,7 +1220,7 @@ GameObject:
   - component: {fileID: 1006852836404623224}
   m_Layer: 8
   m_Name: Female_Hair_Long
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1306,7 +1306,7 @@ GameObject:
   - component: {fileID: 8069620077157256741}
   m_Layer: 8
   m_Name: thumb.03.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1338,7 +1338,7 @@ GameObject:
   - component: {fileID: 2050185806994525002}
   m_Layer: 8
   m_Name: Tail.014_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 6007010169213706042}
   m_Layer: 8
   m_Name: UpperHips.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 1374476210363815290}
   m_Layer: 8
   m_Name: falsethigh.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 2284113309636664908}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1465,7 +1465,7 @@ GameObject:
   - component: {fileID: 7925616041378513959}
   m_Layer: 8
   m_Name: f_middle.02.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1500,7 +1500,7 @@ GameObject:
   - component: {fileID: 9135288847122645018}
   m_Layer: 8
   m_Name: upper_arm.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1608,7 +1608,7 @@ GameObject:
   - component: {fileID: 5081222447585754607}
   m_Layer: 8
   m_Name: thumb.03.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 9135288846267124795}
   m_Layer: 8
   m_Name: Tail.008
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1751,7 +1751,7 @@ GameObject:
   - component: {fileID: 3002442753956375285}
   m_Layer: 8
   m_Name: TailIk.008_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1782,7 +1782,7 @@ GameObject:
   - component: {fileID: 1751381040000132397}
   m_Layer: 8
   m_Name: shoulder.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1814,7 +1814,7 @@ GameObject:
   - component: {fileID: 757660035210533439}
   m_Layer: 8
   m_Name: hand.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1850,7 +1850,7 @@ GameObject:
   - component: {fileID: 8542068190394713055}
   m_Layer: 8
   m_Name: f_ring.03.R_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1882,7 +1882,7 @@ GameObject:
   - component: {fileID: 8793103878672862361}
   m_Layer: 8
   m_Name: Eyebrow_Female_04
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1931,7 +1931,7 @@ GameObject:
   - component: {fileID: 7587862926486479314}
   m_Layer: 8
   m_Name: f_index.03.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 7442649388266588294}
   m_Layer: 8
   m_Name: f_pinky.03.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1995,7 +1995,7 @@ GameObject:
   - component: {fileID: 1562843953092377516}
   m_Layer: 8
   m_Name: f_ring.03.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2027,7 +2027,7 @@ GameObject:
   - component: {fileID: 2243816128728102618}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2059,7 +2059,7 @@ GameObject:
   - component: {fileID: 7912972828889430311}
   m_Layer: 8
   m_Name: Hair_Female_Shaggy
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2108,7 +2108,7 @@ GameObject:
   - component: {fileID: 1748684310454079782}
   m_Layer: 8
   m_Name: Butt.r_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2139,7 +2139,7 @@ GameObject:
   - component: {fileID: 24436770791538471}
   m_Layer: 8
   m_Name: TailIk.004
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2171,7 +2171,7 @@ GameObject:
   - component: {fileID: 5499611290016930053}
   m_Layer: 8
   m_Name: f_index.01.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2203,7 +2203,7 @@ GameObject:
   - component: {fileID: 3774598463386250592}
   m_Layer: 8
   m_Name: TailIk.002_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2234,7 +2234,7 @@ GameObject:
   - component: {fileID: 372916628312048146}
   m_Layer: 8
   m_Name: f_ring.02.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2269,7 +2269,7 @@ GameObject:
   - component: {fileID: 9135288847101552134}
   m_Layer: 8
   m_Name: Tail.009
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2378,11 +2378,11 @@ GameObject:
   - component: {fileID: 6619973283209800217}
   m_Layer: 8
   m_Name: Plane.021
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5245335088035979689
 Transform:
   m_ObjectHideFlags: 0
@@ -2550,7 +2550,7 @@ GameObject:
   - component: {fileID: 5850315070930596270}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2581,7 +2581,7 @@ GameObject:
   - component: {fileID: 2629132831991155508}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2613,7 +2613,7 @@ GameObject:
   - component: {fileID: 5236578169614412451}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2644,7 +2644,7 @@ GameObject:
   - component: {fileID: 4100989311226030125}
   m_Layer: 8
   m_Name: f_pinky.03.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 4804608074425766768}
   m_Layer: 8
   m_Name: f_pinky.03.R_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2707,7 +2707,7 @@ GameObject:
   - component: {fileID: 6720214140515303145}
   m_Layer: 8
   m_Name: Butt
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2739,7 +2739,7 @@ GameObject:
   - component: {fileID: 1023631158839461174}
   m_Layer: 8
   m_Name: f_middle.03.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2771,7 +2771,7 @@ GameObject:
   - component: {fileID: 4589793268153415202}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2803,7 +2803,7 @@ GameObject:
   - component: {fileID: 7802629861555569315}
   m_Layer: 8
   m_Name: f_ring.03.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2835,7 +2835,7 @@ GameObject:
   - component: {fileID: 1338605093396057650}
   m_Layer: 8
   m_Name: HeadLookAtTarget_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2866,7 +2866,7 @@ GameObject:
   - component: {fileID: 1266999844748306900}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2897,7 +2897,7 @@ GameObject:
   - component: {fileID: 7596978931469611223}
   m_Layer: 8
   m_Name: HandIkTarget.l_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2931,7 +2931,7 @@ GameObject:
   - component: {fileID: 9135288848101958648}
   m_Layer: 8
   m_Name: Tail.011
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3042,7 +3042,7 @@ GameObject:
   - component: {fileID: 9135288846993462417}
   m_Layer: 8
   m_Name: Tail.006
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3150,7 +3150,7 @@ GameObject:
   - component: {fileID: 2937457878483273018}
   m_Layer: 8
   m_Name: Tail.002
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3182,7 +3182,7 @@ GameObject:
   - component: {fileID: 3202390355625127596}
   m_Layer: 8
   m_Name: BodyPosition
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3215,7 +3215,7 @@ GameObject:
   - component: {fileID: 8457463035148487125}
   m_Layer: 8
   m_Name: Female_Brow_03
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3301,7 +3301,7 @@ GameObject:
   - component: {fileID: 5327629742569986604}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3333,7 +3333,7 @@ GameObject:
   - component: {fileID: 4264268394103893149}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3364,7 +3364,7 @@ GameObject:
   - component: {fileID: 3079227311824910081}
   m_Layer: 8
   m_Name: Tail.014
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3396,7 +3396,7 @@ GameObject:
   - component: {fileID: 3222764223084459100}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3427,7 +3427,7 @@ GameObject:
   - component: {fileID: 2396484794580325666}
   m_Layer: 8
   m_Name: HandIkBind.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3462,7 +3462,7 @@ GameObject:
   - component: {fileID: 9135288847650612827}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3580,7 +3580,7 @@ GameObject:
   - component: {fileID: 2127269023029165108}
   m_Layer: 8
   m_Name: f_pinky.03.L_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3611,7 +3611,7 @@ GameObject:
   - component: {fileID: 3647999427977412356}
   m_Layer: 8
   m_Name: f_index.03.L_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3642,7 +3642,7 @@ GameObject:
   - component: {fileID: 7797463554898929922}
   m_Layer: 8
   m_Name: f_index.03.R_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3673,7 +3673,7 @@ GameObject:
   - component: {fileID: 1790260860548575473}
   m_Layer: 8
   m_Name: falsefoot.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3705,7 +3705,7 @@ GameObject:
   - component: {fileID: 1083070322313614151}
   m_Layer: 8
   m_Name: f_middle.01.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3738,7 +3738,7 @@ GameObject:
   - component: {fileID: 1283444972610445614}
   m_Layer: 8
   m_Name: Female_Brow_06
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3824,7 +3824,7 @@ GameObject:
   - component: {fileID: 2320959988802982848}
   m_Layer: 8
   m_Name: falsefoot.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3859,7 +3859,7 @@ GameObject:
   - component: {fileID: 9135288847330423560}
   m_Layer: 8
   m_Name: Tail.007
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3967,7 +3967,7 @@ GameObject:
   - component: {fileID: 8300674837075751698}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3998,7 +3998,7 @@ GameObject:
   - component: {fileID: 3633269232318500298}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4030,7 +4030,7 @@ GameObject:
   - component: {fileID: 4428449957783946685}
   m_Layer: 8
   m_Name: Breast.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4062,7 +4062,7 @@ GameObject:
   - component: {fileID: 7809604943337309637}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4094,7 +4094,7 @@ GameObject:
   - component: {fileID: 741986802225643332}
   m_Layer: 8
   m_Name: Butt_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4125,7 +4125,7 @@ GameObject:
   - component: {fileID: 5221481021692490225}
   m_Layer: 8
   m_Name: f_middle.01.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4157,7 +4157,7 @@ GameObject:
   - component: {fileID: 3457269460139291067}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4189,7 +4189,7 @@ GameObject:
   - component: {fileID: 6847154894765253750}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4220,7 +4220,7 @@ GameObject:
   - component: {fileID: 385205947289957392}
   m_Layer: 8
   m_Name: TailIk.007
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4252,7 +4252,7 @@ GameObject:
   - component: {fileID: 5165824738017501178}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4284,7 +4284,7 @@ GameObject:
   - component: {fileID: 3557740465937555654}
   m_Layer: 8
   m_Name: TailIk.009_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4315,7 +4315,7 @@ GameObject:
   - component: {fileID: 5508028088289673292}
   m_Layer: 8
   m_Name: HeadLookAtTarget
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4347,7 +4347,7 @@ GameObject:
   - component: {fileID: 48924871912417356}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4379,7 +4379,7 @@ GameObject:
   - component: {fileID: 431100333435961077}
   m_Layer: 8
   m_Name: Female_Hair_03_Short
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4428,7 +4428,7 @@ GameObject:
   - component: {fileID: 8721272430343635936}
   m_Layer: 8
   m_Name: UpperHips.r.001_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4459,7 +4459,7 @@ GameObject:
   - component: {fileID: 496365675441999512}
   m_Layer: 8
   m_Name: f_pinky.02.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4491,7 +4491,7 @@ GameObject:
   - component: {fileID: 6226219625544566974}
   m_Layer: 8
   m_Name: Breast.R_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4522,7 +4522,7 @@ GameObject:
   - component: {fileID: 2071908798435937891}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4553,7 +4553,7 @@ GameObject:
   - component: {fileID: 2275210722191902475}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4585,7 +4585,7 @@ GameObject:
   - component: {fileID: 5733769703638201244}
   m_Layer: 8
   m_Name: Eyebrow_Female_06
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4634,7 +4634,7 @@ GameObject:
   - component: {fileID: 3951010532488202817}
   m_Layer: 8
   m_Name: spine.001
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4666,7 +4666,7 @@ GameObject:
   - component: {fileID: 4252046275847500334}
   m_Layer: 8
   m_Name: PT
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4699,7 +4699,7 @@ GameObject:
   - component: {fileID: 9065086648223324153}
   m_Layer: 8
   m_Name: Female_Brow_04
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4785,7 +4785,7 @@ GameObject:
   - component: {fileID: 8467252670871837704}
   m_Layer: 8
   m_Name: thumb.03.R_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4816,7 +4816,7 @@ GameObject:
   - component: {fileID: 8152051713994508716}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4847,7 +4847,7 @@ GameObject:
   - component: {fileID: 5879267996196955281}
   m_Layer: 8
   m_Name: TailIk.004_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4878,7 +4878,7 @@ GameObject:
   - component: {fileID: 7343235348966211242}
   m_Layer: 8
   m_Name: falsefoot.r_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4909,7 +4909,7 @@ GameObject:
   - component: {fileID: 8613202055565938773}
   m_Layer: 8
   m_Name: UpperHips.l_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4940,7 +4940,7 @@ GameObject:
   - component: {fileID: 1854081375682867408}
   m_Layer: 8
   m_Name: f_index.02.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4972,7 +4972,7 @@ GameObject:
   - component: {fileID: 6806042238787480118}
   m_Layer: 8
   m_Name: falseshin.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5004,7 +5004,7 @@ GameObject:
   - component: {fileID: 8527578494990856682}
   m_Layer: 8
   m_Name: Neck
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5036,7 +5036,7 @@ GameObject:
   - component: {fileID: 1827815549895426511}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5070,7 +5070,7 @@ GameObject:
   - component: {fileID: 9135288846577953313}
   m_Layer: 8
   m_Name: forearm.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5178,7 +5178,7 @@ GameObject:
   - component: {fileID: 6294187734002068342}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5210,7 +5210,7 @@ GameObject:
   - component: {fileID: 1561197136499205349}
   m_Layer: 8
   m_Name: HandIkTarget.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5242,7 +5242,7 @@ GameObject:
   - component: {fileID: 1529611139350185038}
   m_Layer: 8
   m_Name: Butt.r
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5274,7 +5274,7 @@ GameObject:
   - component: {fileID: 6748976798650570467}
   m_Layer: 8
   m_Name: f_index.02.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5307,7 +5307,7 @@ GameObject:
   - component: {fileID: 7370773770216068728}
   m_Layer: 8
   m_Name: Hair_Female_Poneytail
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5395,7 +5395,7 @@ GameObject:
   - component: {fileID: 4700518825797781726}
   m_Layer: 8
   m_Name: f_pinky.02.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5427,7 +5427,7 @@ GameObject:
   - component: {fileID: 3744303911793975396}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5459,7 +5459,7 @@ GameObject:
   - component: {fileID: 7043525873519505068}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5492,7 +5492,7 @@ GameObject:
   - component: {fileID: 7790961195788729684}
   m_Layer: 8
   m_Name: Female_Hair_01_Long
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5541,7 +5541,7 @@ GameObject:
   - component: {fileID: 4375843336222391201}
   m_Layer: 8
   m_Name: thumb.01.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5573,7 +5573,7 @@ GameObject:
   - component: {fileID: 9103142911226924351}
   m_Layer: 8
   m_Name: HandIkTarget.r_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5604,7 +5604,7 @@ GameObject:
   - component: {fileID: 1447879919166763446}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5636,7 +5636,7 @@ GameObject:
   - component: {fileID: 3885183105546100109}
   m_Layer: 8
   m_Name: NurbsPath.001
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5725,7 +5725,7 @@ GameObject:
   - component: {fileID: 9135288846420460114}
   m_Layer: 8
   m_Name: spine.002
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5832,7 +5832,7 @@ GameObject:
   - component: {fileID: 1976991618413852325}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5866,7 +5866,7 @@ GameObject:
   - component: {fileID: 9135288848174288003}
   m_Layer: 8
   m_Name: Tail.001
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5974,7 +5974,7 @@ GameObject:
   - component: {fileID: 2454547184964065121}
   m_Layer: 8
   m_Name: UpperHips.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6006,7 +6006,7 @@ GameObject:
   - component: {fileID: 3121864704213053606}
   m_Layer: 8
   m_Name: f_ring.03.L_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6037,7 +6037,7 @@ GameObject:
   - component: {fileID: 61295657637962603}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6068,7 +6068,7 @@ GameObject:
   - component: {fileID: 65346102119052951}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6100,7 +6100,7 @@ GameObject:
   - component: {fileID: 1703920727838459070}
   m_Layer: 8
   m_Name: Eyebrow_Female_05
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6149,7 +6149,7 @@ GameObject:
   - component: {fileID: 4321004691406188285}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6181,7 +6181,7 @@ GameObject:
   - component: {fileID: 4553196154358837517}
   m_Layer: 8
   m_Name: f_ring.01.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6213,7 +6213,7 @@ GameObject:
   - component: {fileID: 4591168436762585421}
   m_Layer: 8
   m_Name: TailIk.006
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6245,7 +6245,7 @@ GameObject:
   - component: {fileID: 9119212956143261059}
   m_Layer: 8
   m_Name: shoulder.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6277,7 +6277,7 @@ GameObject:
   - component: {fileID: 4254488062813164457}
   m_Layer: 8
   m_Name: UpperBodyRotation
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6309,7 +6309,7 @@ GameObject:
   - component: {fileID: 8463471993733322796}
   m_Layer: 8
   m_Name: f_pinky.01.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6342,7 +6342,7 @@ GameObject:
   - component: {fileID: 4979940585267721901}
   m_Layer: 8
   m_Name: Female_Brow_05
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6429,7 +6429,7 @@ GameObject:
   - component: {fileID: 5830892753671423262}
   m_Layer: 8
   m_Name: Eyebrow_Female_07
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6478,7 +6478,7 @@ GameObject:
   - component: {fileID: 7454150735314946797}
   m_Layer: 8
   m_Name: f_middle.03.L_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6509,7 +6509,7 @@ GameObject:
   - component: {fileID: 635481870588648312}
   m_Layer: 8
   m_Name: f_ring.01.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6541,7 +6541,7 @@ GameObject:
   - component: {fileID: 4229128293187075098}
   m_Layer: 8
   m_Name: UpperHips.r.001
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6573,7 +6573,7 @@ GameObject:
   - component: {fileID: 7586213941882002305}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6604,7 +6604,7 @@ GameObject:
   - component: {fileID: 2939795867408610863}
   m_Layer: 8
   m_Name: TailIk.001
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6636,7 +6636,7 @@ GameObject:
   - component: {fileID: 2257355880768831449}
   m_Layer: 8
   m_Name: Human_Female_Armature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6682,7 +6682,7 @@ GameObject:
   - component: {fileID: 9135288847070517031}
   m_Layer: 8
   m_Name: forearm.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6793,7 +6793,7 @@ GameObject:
   - component: {fileID: 9135288848023299027}
   m_Layer: 8
   m_Name: Tail.010
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6901,7 +6901,7 @@ GameObject:
   - component: {fileID: 5701363986338998634}
   m_Layer: 8
   m_Name: f_middle.03.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6933,7 +6933,7 @@ GameObject:
   - component: {fileID: 2514888721329280127}
   m_Layer: 8
   m_Name: HandIkBind.l_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6964,7 +6964,7 @@ GameObject:
   - component: {fileID: 431987206594805391}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6995,7 +6995,7 @@ GameObject:
   - component: {fileID: 8969732713814193326}
   m_Layer: 8
   m_Name: f_index.03.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7027,7 +7027,7 @@ GameObject:
   - component: {fileID: 1482398492736742923}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7058,7 +7058,7 @@ GameObject:
   - component: {fileID: 3694051268115882477}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7089,7 +7089,7 @@ GameObject:
   - component: {fileID: 4221656467857787299}
   m_Layer: 8
   m_Name: thumb.01.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7121,7 +7121,7 @@ GameObject:
   - component: {fileID: 8595378537194525556}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7153,7 +7153,7 @@ GameObject:
   - component: {fileID: 457064324928875856}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7184,7 +7184,7 @@ GameObject:
   - component: {fileID: 7726907540390009527}
   m_Layer: 8
   m_Name: TailIk.005
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7216,7 +7216,7 @@ GameObject:
   - component: {fileID: 2556147875536615191}
   m_Layer: 8
   m_Name: f_pinky.01.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7248,7 +7248,7 @@ GameObject:
   - component: {fileID: 8557772660522446768}
   m_Layer: 8
   m_Name: UpperBodyRotation_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7280,7 +7280,7 @@ GameObject:
   - component: {fileID: 4441221428993481741}
   m_Layer: 8
   m_Name: Female
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7454,7 +7454,7 @@ GameObject:
   - component: {fileID: 5673119761186877685}
   m_Layer: 8
   m_Name: Eyebrow_Female_01
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7504,7 +7504,7 @@ GameObject:
   - component: {fileID: 563205829224113699}
   m_Layer: 8
   m_Name: Female_Brow_02
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7591,7 +7591,7 @@ GameObject:
   - component: {fileID: 1207378703211536335}
   m_Layer: 8
   m_Name: Female_Brow_07
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7677,7 +7677,7 @@ GameObject:
   - component: {fileID: 6596664320029951200}
   m_Layer: 8
   m_Name: TailIk.006_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7708,7 +7708,7 @@ GameObject:
   - component: {fileID: 4055229204802677759}
   m_Layer: 8
   m_Name: falseshin.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7740,7 +7740,7 @@ GameObject:
   - component: {fileID: 7843316897703799295}
   m_Layer: 8
   m_Name: thumb.02.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7772,7 +7772,7 @@ GameObject:
   - component: {fileID: 4642454236425932290}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7804,7 +7804,7 @@ GameObject:
   - component: {fileID: 2726888076427506903}
   m_Layer: 8
   m_Name: TailIk.002
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7836,7 +7836,7 @@ GameObject:
   - component: {fileID: 977625538904248993}
   m_Layer: 8
   m_Name: falsefoot.l_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7867,7 +7867,7 @@ GameObject:
   - component: {fileID: 2972206561798003374}
   m_Layer: 8
   m_Name: HandIkBind.r_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7899,7 +7899,7 @@ GameObject:
   - component: {fileID: 8635858045765215758}
   m_Layer: 8
   m_Name: Female_Hair_02_Poneytail
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -7949,7 +7949,7 @@ GameObject:
   - component: {fileID: 7897334912361650999}
   m_Layer: 8
   m_Name: Hair_Female_Short
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8038,7 +8038,7 @@ GameObject:
   - component: {fileID: 9135288847586810457}
   m_Layer: 8
   m_Name: Tail.005
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8150,7 +8150,6 @@ GameObject:
   - component: {fileID: 9135288846461648693}
   - component: {fileID: 3435548770985407412}
   - component: {fileID: 4195365606168354197}
-  - component: {fileID: 9135288846461648694}
   - component: {fileID: 6949548580300568910}
   - component: {fileID: -7890184431800109293}
   - component: {fileID: 6146194329638686486}
@@ -8385,20 +8384,6 @@ MonoBehaviour:
   useNextAnimationInTransitions: 1
   forceToIndex: -1
   dampening: 1
---- !u!64 &9135288846461648694
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8216387747335697271}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5673117758631265011, guid: ca8e58f372441f44c91b481f17592984, type: 3}
 --- !u!195 &6949548580300568910
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8461,7 +8446,7 @@ GameObject:
   - component: {fileID: 433590882693508766}
   m_Layer: 8
   m_Name: thumb.03.L_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8493,7 +8478,7 @@ GameObject:
   - component: {fileID: 2374231803716502057}
   m_Layer: 8
   m_Name: Eyebrow_Female_02
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8542,7 +8527,7 @@ GameObject:
   - component: {fileID: 8269603721453057178}
   m_Layer: 8
   m_Name: TailIk.005_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8573,7 +8558,7 @@ GameObject:
   - component: {fileID: 1048333863855955486}
   m_Layer: 8
   m_Name: HairSet_Female
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8615,7 +8600,7 @@ GameObject:
   - component: {fileID: 3789342414726616600}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8646,7 +8631,7 @@ GameObject:
   - component: {fileID: 3038476110498732737}
   m_Layer: 8
   m_Name: UpperHips.r_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8677,7 +8662,7 @@ GameObject:
   - component: {fileID: 2010526863287424767}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8709,7 +8694,7 @@ GameObject:
   - component: {fileID: 1196407250010559681}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8741,7 +8726,7 @@ GameObject:
   - component: {fileID: 1201227390347313469}
   m_Layer: 8
   m_Name: Head
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8776,7 +8761,7 @@ GameObject:
   - component: {fileID: 9135288847588879953}
   m_Layer: 8
   m_Name: Tail.012
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8887,7 +8872,7 @@ GameObject:
   - component: {fileID: 9135288847968783083}
   m_Layer: 8
   m_Name: Tail.003
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8995,7 +8980,7 @@ GameObject:
   - component: {fileID: 7556199713260763524}
   m_Layer: 8
   m_Name: Base_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9026,7 +9011,7 @@ GameObject:
   - component: {fileID: 5937294937454342416}
   m_Layer: 8
   m_Name: Butt.l
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9061,7 +9046,7 @@ GameObject:
   - component: {fileID: 9135288846110412426}
   m_Layer: 8
   m_Name: upper_arm.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9169,7 +9154,7 @@ GameObject:
   - component: {fileID: 1538589440784114557}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9200,7 +9185,7 @@ GameObject:
   - component: {fileID: 5937567711341180180}
   m_Layer: 8
   m_Name: TailIk.003_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9231,7 +9216,7 @@ GameObject:
   - component: {fileID: 2279732547023839776}
   m_Layer: 8
   m_Name: Base
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9263,7 +9248,7 @@ GameObject:
   - component: {fileID: 5137152735172711182}
   m_Layer: 8
   m_Name: f_ring.02.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9295,7 +9280,7 @@ GameObject:
   - component: {fileID: 7569460334472030630}
   m_Layer: 8
   m_Name: Human_Female_HairArmature
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9326,7 +9311,7 @@ GameObject:
   - component: {fileID: 4364112122155779856}
   m_Layer: 8
   m_Name: TailIk.008
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9358,7 +9343,7 @@ GameObject:
   - component: {fileID: 4075080336257536399}
   m_Layer: 8
   m_Name: hand.R
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9394,7 +9379,7 @@ GameObject:
   - component: {fileID: 2579058165794204830}
   m_Layer: 8
   m_Name: f_index.01.L
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9426,7 +9411,7 @@ GameObject:
   - component: {fileID: 7584780407299263129}
   m_Layer: 8
   m_Name: Head_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9457,7 +9442,7 @@ GameObject:
   - component: {fileID: 7469013919672554102}
   m_Layer: 8
   m_Name: Breast.L_end
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

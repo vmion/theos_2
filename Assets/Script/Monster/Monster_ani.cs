@@ -13,6 +13,7 @@ public class Monster_ani : MonoBehaviour
     public Item item;
     public ParticleSystem particle;
     public float hp = 100f;
+    public GameObject player;
     void Awake()
     {
         Mani = GetComponent<Animator>();
@@ -21,6 +22,7 @@ public class Monster_ani : MonoBehaviour
         CharInventory = Character_Manager.instance.GetComponent<Char_Inventory>();
         item = Resources.Load<Item>("Inventroy_Item/Gem");
         particle = Resources.Load<ParticleSystem>("Particle/Hit_05");
+        player = CharInventory.gameObject;
     }
     void Start()
     {    
@@ -65,7 +67,13 @@ public class Monster_ani : MonoBehaviour
         else
         {
             Mani.SetBool("isMoving", true);
-        }        
+        }
+
+        float dis = Vector3.Distance(transform.position, player.transform.position);
+        if(dis <= 3f)
+        {
+            transform.LookAt(player.transform.position);
+        }
     }   
     
     public void AutoMove()

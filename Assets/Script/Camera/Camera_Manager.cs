@@ -36,7 +36,14 @@ public class Camera_Manager : MonoBehaviour
     }    
     void Update()
     {
-        if(Obj_Portal.CamX == true)
+        xmove += Input.GetAxis("Mouse X");
+        ymove = 6f;
+        transform.rotation = Quaternion.Euler(ymove, xmove, 0);
+        Vector3 reverseDistance = new Vector3(0.0f, -2f, distance);
+        Transform character = player.transform.GetChild(0);
+        transform.position = character.transform.position - transform.rotation * reverseDistance;
+        /*
+        if (Obj_Portal.CamX == true)
         {
             xmove = 0f;
         }
@@ -49,5 +56,6 @@ public class Camera_Manager : MonoBehaviour
             Transform character = player.transform.GetChild(0);
             transform.position = character.transform.position - transform.rotation * reverseDistance;
         }
+        */
     }
 }

@@ -5,9 +5,10 @@ using UnityEngine;
 public class Obj_Portal : MonoBehaviour
 {    
     public GameObject caution;
-    public static bool CamX = false;
+    //public static bool CamX = false;
     Collider ObjCollider;
     Collider Player;
+    
     public bool COLLISIONCHECK { get; set; }
     void Start()
     {
@@ -17,18 +18,22 @@ public class Obj_Portal : MonoBehaviour
     }
     void Update()
     {        
-        if (COLLISIONCHECK)
+        if(Player.gameObject.transform.GetComponentInParent<Char_ani>().enabled == true)
         {
-            if (ObjCollider.bounds.Intersects(Player.bounds))
+            if (COLLISIONCHECK)
             {
-                caution.SetActive(true);
-                CamX = true;                
+                if (ObjCollider.bounds.Intersects(Player.bounds))
+                {
+                    caution.SetActive(true);
+                    
+                }
+                else
+                {
+                    caution.SetActive(false);
+                    
+                }
             }
-            else
-            {
-                caution.SetActive(false);
-                CamX = false;
-            }
-        }        
+        }
+              
     }     
 }

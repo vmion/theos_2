@@ -46,28 +46,26 @@ public class Char_ani :  MonoBehaviour
         //centerPos = JoyStick.rectTransform.position;
         //CcenterPos = Rotate_Camera.rectTransform.position;
         ani.SetBool("Dead", false);
+        //StartCoroutine("Move");
     }    
     public void Move()
-    {        
+    {
         //LcenterPos = JoyStick_Lever.rectTransform.position;
         //Vector2 moveVec = (LcenterPos - centerPos).normalized;
         //Vector2 moveInput = new Vector2(moveVec.x, moveVec.y);
+        
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        bool isMove = moveInput.magnitude != 0;        
-        ani.SetBool("isMove", isMove); 
-        if(isMove)
+        bool isMove = moveInput.magnitude != 0;
+        ani.SetBool("isMove", isMove);
+        if (isMove)
         {
             Vector3 lookforward = new Vector3(Cam.forward.x, 0f, Cam.forward.z).normalized;
             Vector3 lookRight = new Vector3(Cam.right.x, 0f, Cam.right.z).normalized;
             Vector3 moveDir = lookforward * moveInput.y + lookRight * moveInput.x;
-            Char.forward = lookforward;            
-            transform.position += moveDir * moveSpeed * Time.deltaTime; 
-        }        
-        if (hp.fillAmount == 0)
-        {
-            moveSpeed = 0;
-            ani.SetBool("Dead", true);
-        }        
+            Char.forward = lookforward;
+            transform.position += moveDir * moveSpeed * Time.deltaTime;
+        }
+           
     }  
     
     public void LookAround()
@@ -95,7 +93,7 @@ public class Char_ani :  MonoBehaviour
         {
             if(Skill_1.fillAmount == 1)
             {                
-                StartCoroutine(CoolTime(Skill_1, 1));                
+                StartCoroutine(CoolTime(Skill_1, 1.2f));                
                 ani.SetTrigger("Attack");                
                 skillAudio1.Play();
             }
@@ -106,11 +104,15 @@ public class Char_ani :  MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (Skill_2.fillAmount == 1)
+            if (Skill_2.fillAmount == 1 && mp.fillAmount >= 0.1f)
             {
-                StartCoroutine(CoolTime(Skill_2, 3));
+                StartCoroutine(CoolTime(Skill_2, 5));
                 ani.SetTrigger("Swing");
                 mp.fillAmount -= 0.1f;
+            }
+            else if(mp.fillAmount < 0.1f)
+            {
+                Debug.Log("마나가 부족합니다.");
             }
             else
             {
@@ -119,11 +121,15 @@ public class Char_ani :  MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            if (Skill_3.fillAmount == 1)
+            if (Skill_3.fillAmount == 1 && mp.fillAmount >= 0.15f)
             {
-                StartCoroutine(CoolTime(Skill_3, 5));
+                StartCoroutine(CoolTime(Skill_3, 10));
                 ani.SetTrigger("Sting");
                 mp.fillAmount -= 0.15f;
+            }
+            else if (mp.fillAmount < 0.15f)
+            {
+                Debug.Log("마나가 부족합니다.");
             }
             else
             {
@@ -132,38 +138,115 @@ public class Char_ani :  MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            if (Skill_4.fillAmount == 1)
+            if (Skill_4.fillAmount == 1 && mp.fillAmount >= 0.2f)
             {
-                StartCoroutine(CoolTime(Skill_4, 0));
+                StartCoroutine(CoolTime(Skill_4, 30));
                 ani.SetTrigger("Buff");
-                StartCoroutine(OnBuff(20));
+                StartCoroutine(OnBuff(30));
                 Vector3 rotation = new Vector3(-90, 0, 0);
                 ParticleSystem instance = Instantiate(buff, transform.position, Quaternion.Euler(rotation));
                 Destroy(instance.gameObject, instance.main.duration);
                 mp.fillAmount -= 0.2f;
+            }
+            else if (mp.fillAmount < 0.2f)
+            {
+                Debug.Log("마나가 부족합니다.");
             }
             else
             {
                 Debug.Log("쿨타임입니다.");
             }
         }
-    }    
+    }
+    /*
+    public void ButtonSkill(string _skill)
+    {
+        if (_skill == "attack")
+        {
+            if (Skill_1.fillAmount == 1)
+            {
+                StartCoroutine(CoolTime(Skill_1, 1.2f));
+                ani.SetTrigger("Attack");
+                skillAudio1.Play();
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+        if (_skill == "swing")
+        {
+            if (Skill_2.fillAmount == 1 && mp.fillAmount >= 0.1f)
+            {
+                StartCoroutine(CoolTime(Skill_2, 5));
+                ani.SetTrigger("Swing");
+                mp.fillAmount -= 0.1f;
+            }
+            else if (mp.fillAmount < 0.1f)
+            {
+                Debug.Log("마나가 부족합니다.");
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+        if (_skill == "sting")
+        {
+            if (Skill_3.fillAmount == 1 && mp.fillAmount >= 0.15f)
+            {
+                StartCoroutine(CoolTime(Skill_3, 10));
+                ani.SetTrigger("Sting");
+                mp.fillAmount -= 0.15f;
+            }
+            else if (mp.fillAmount < 0.15f)
+            {
+                Debug.Log("마나가 부족합니다.");
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+        if (_skill == "buff")
+        {
+            if (Skill_4.fillAmount == 1 && mp.fillAmount >= 0.2f)
+            {
+                StartCoroutine(CoolTime(Skill_4, 30));
+                ani.SetTrigger("Buff");
+                StartCoroutine(OnBuff(30));
+                Vector3 rotation = new Vector3(-90, 0, 0);
+                ParticleSystem instance = Instantiate(buff, transform.position, Quaternion.Euler(rotation));
+                Destroy(instance.gameObject, instance.main.duration);
+                mp.fillAmount -= 0.2f;
+            }
+            else if (mp.fillAmount < 0.2f)
+            {
+                Debug.Log("마나가 부족합니다.");
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+    }
+    */
     public void ButtonPortion()
     {
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            if (Portion.fillAmount == 1 && hp.fillAmount != 1)
+            if (Portion.fillAmount == 1 && mp.fillAmount != 1)
             {
-                hp.fillAmount += 0.2f;
+                mp.fillAmount += 0.2f;
                 StartCoroutine(CoolTime(Portion, 10));
             }
             else
             {
                 Debug.Log("쿨타임입니다.");
             }
-            if(hp.fillAmount == 1)
+            if(mp.fillAmount == 1)
             {
-                Debug.Log("HP가 가득 차 있습니다.");
+                Debug.Log("MP가 가득 차 있습니다.");
             }
         }
     }
@@ -187,9 +270,9 @@ public class Char_ani :  MonoBehaviour
     }
    
     void Update()
-    {        
+    {
         //LookAround();
-        Move();
+        Move();        
         ButtonSkill();
         ButtonPortion();
 
@@ -201,6 +284,11 @@ public class Char_ani :  MonoBehaviour
         if(mp.fillAmount < 1f)
         {
             mp.fillAmount += 0.0001f * Time.deltaTime;
+        }
+        if (hp.fillAmount == 0)
+        {
+            moveSpeed = 0;
+            ani.SetBool("Dead", true);
         }
     }    
 }

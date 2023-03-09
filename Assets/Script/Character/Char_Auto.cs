@@ -12,33 +12,53 @@ public class Char_Auto : MonoBehaviour
 
     GameObject marker;
     GameObject minimpaCam;
+
+    public List<GameObject> mobList;
+    GameObject enemy;
+    string TagName;
+    float shortDis;
+    
     void Start()
-    {        
-        //player = Character_Manager.instance.transform.GetChild(0);
-        //ani = player.GetComponent<Animator>();
-        ani = transform.GetComponent<Animator>();
+    {      
+        ani = transform.GetComponentInChildren<Animator>();
         GameObject ui = GameObject.Find("UI_default");
         marker = ui.transform.GetChild(6).Find("playerMarker").gameObject;
-        minimpaCam = ui.transform.GetChild(6).Find("MiniMapCam").gameObject;
-        //gameObject.GetComponent<Char_ani>().enabled = false;
-        gameObject.GetComponentInParent<Char_ani>().enabled = false;
-        AutoMove();
+        minimpaCam = ui.transform.GetChild(6).Find("MiniMapCam").gameObject;        
+        gameObject.GetComponent<Char_ani>().enabled = false;
+
+        TagName = "Monster";
+        mobList = new List<GameObject>(GameObject.FindGameObjectsWithTag(TagName));
+        shortDis = Vector3.Distance(gameObject.transform.position, mobList[0].transform.position);
+        enemy = mobList[0];
+        GetEnemy();        
     }
     void Update()
     {       
-        if(target != null)
+        if(enemy.activeSelf == true)
         {
-            //StopCoroutine("AutoMove");            
-            float dis = Vector3.Distance(transform.position, target.position);
-            if (dis <= 3f)
+            //transform.Translate(enemy.transform.position * Time.deltaTime * 0.05f);
+            Vector3 move = enemy.transform.position - transform.position;
+            transform.position += move * Time.deltaTime * 0.5f;
+            ani.SetBool("isMove", true);
+            float dis = Vector3.Distance(transform.position, enemy.transform.position);
+            transform.forward = enemy.transform.position;
+            if (dis <= 2f)
             {
-                transform.LookAt(target);
+                transform.LookAt(enemy.transform);
                 Attack();
             }
         }
-        else if(target == null)
+        
+        else if(enemy.activeSelf == false)
         {
-            UpdateTarget();            
+            mobList.Remove(enemy);
+            enemy = mobList[0];
+            GetEnemy();
+        }
+
+        if(mobList == null)
+        {
+            Debug.Log("주위에 몬스터가 없습니다.");
         }
 
         marker.transform.position = new Vector3(transform.position.x, marker.transform.position.y,
@@ -49,9 +69,22 @@ public class Char_Auto : MonoBehaviour
     }
     public void Attack()
     {
-        ani.SetTrigger("Attack");
+        ani.SetTrigger("Attack");        
     }
-    
+    public void GetEnemy()
+    {        
+        foreach (GameObject one in mobList)
+        {
+            float Distance = Vector3.Distance(gameObject.transform.position, one.transform.position);
+            if (Distance < shortDis)
+            {
+                enemy = one;
+                shortDis = Distance;
+            }
+        }
+        Debug.Log(enemy.name);
+    }
+    /*
     public void AutoMove()
     {
         Vector3 nextMove;
@@ -80,11 +113,15 @@ public class Char_Auto : MonoBehaviour
     }
     public void UpdateTarget()
     {
-        Vector3 half = new Vector3(15f, 0, 15f);
+        Vector3 half = new Vector3(30f, 0, 30f);
          
         Collider[] cols = Physics.OverlapBox(transform.position, half,
             Quaternion.identity, LayerMask.NameToLayer("Monster"));
-
+        foreach(Collider one in cols)
+        {
+            Debug.Log(one.gameObject.name);
+        }
+        
         if (cols.Length > 0)
         {
             for (int i = 0; i < cols.Length; i++)
@@ -106,6 +143,7 @@ public class Char_Auto : MonoBehaviour
         else
         {
             target = null;
-        }        
+        }       
     }
+    */
 }

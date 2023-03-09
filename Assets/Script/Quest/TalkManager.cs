@@ -31,10 +31,12 @@ public class TalkManager : MonoBehaviour
 
         talkData.Add(1000 + 10, new string[] { "갑작스럽지만 도움이 필요합니다." +
             " \n숲에서 몬스터를 사냥하고 짐을 찾아주시겠어요 ?:" });                           
-        talkData.Add(1000 + 10 + 1, new string[] { "감사합니다! \n촌장님도 뭔가 고민이 있는 것 같은데 가보시겠어요?:"});        
+        talkData.Add(1000 + 10 + 1, new string[] { "감사합니다! \n이 반지는 보답입니다. 받아주세요." + 
+            "\n촌장님도 뭔가 고민이 있는 것 같은데 가보시겠어요?:"});        
         
         //20번 퀘스트
-        talkData.Add(2000 + 20, new string[] { "숲을 소탕해준 얘기는 들었습니다. \n최근 발생한 미궁의 해결도 부탁드려도 될까요?:" });         
+        talkData.Add(2000 + 20, new string[] { "숲을 소탕해준 얘기는 들었습니다. " +
+            "\n미궁의 미노타우루스 소탕을 부탁드려도 괜찮을까요?:" });         
         talkData.Add(2000 + 20 + 1, new string[] { "당신은 마을의 영웅입니다.:"});          
     }
     
