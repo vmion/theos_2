@@ -14,12 +14,17 @@ public class Boss_Hp : MonoBehaviour
     {
         hp.fillAmount = 1f;
         hpText.text = "100%";
-        hpCount = Boss.GetComponent<Boss_ani>().hp;
+        hpCount = Boss.GetComponent<Boss_Marker>().hp;
     }
     void Update()
     {
-        hpCount = Boss.GetComponent<Boss_ani>().hp;
+        hpCount = Boss.GetComponent<Boss_Marker>().hp;
         hp.fillAmount = hpCount / 100f;
         hpText.text = (hp.fillAmount * 100).ToString() + "%";
+
+        if(hp.fillAmount == 0f)
+        {
+            transform.parent.gameObject.SetActive(false);
+        }
     }
 }

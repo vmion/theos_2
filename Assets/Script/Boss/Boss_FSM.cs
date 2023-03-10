@@ -4,64 +4,97 @@ using UnityEngine;
 
 public class Boss_FSM : MonoBehaviour
 {    
-    Animator ani;
-    int hashRun = Animator.StringToHash("isMoving");
-    int hashAttack1 = Animator.StringToHash("isAttack1");
-    int hashAttack2 = Animator.StringToHash("isAttack2");
-    int hashHit = Animator.StringToHash("isHit");
-
-    GameObject parent;
-    GameObject player;
+    Animator ani;    
+        
+    Transform player;
+    Vector3 forPlayer;
+    public List<GameObject> playerPos;
+    int result;    
+    float dis;
     void Start()
     {
         ani = GetComponent<Animator>();
-        parent = Character_Manager.instance.gameObject;
-        player = parent.transform.GetChild(0).gameObject;
-        StartCoroutine(FSM());
-        Debug.Log(player.gameObject.name);
+        playerPos = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
+        player = playerPos[1].transform;  
+    }
+    
+    void Update()
+    {        
+        forPlayer = player.position - transform.position;
+        transform.forward = forPlayer.normalized;
+        dis = Vector3.Distance(transform.position, player.position);
+        result = Random.Range(0, 2);
+        if (dis > 4f)
+        {
+            ani.SetBool("isMoving", true);
+            transform.position += new Vector3(forPlayer.normalized.x * Time.deltaTime * 1.5f, 0f,
+                forPlayer.normalized.z * Time.deltaTime * 1.5f);
+            
+        }
+        if (dis <= 4f)
+        {
+            ani.SetBool("isMoving", false);
+
+            if(ani.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                if (result == 0)
+                {
+                    ani.SetTrigger("isAttack1_");
+
+                }
+                else if (result == 1)
+                {
+                    ani.SetTrigger("isAttack2_");
+
+                }
+            }            
+        }
+    }    
+    IEnumerator RandomInt(int a, int b)
+    {
+        int randomResult = Random.Range(a, b);
+        result = randomResult;
+        yield return new WaitForSeconds(5f);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "weapon")
         {
-            ani.SetBool(hashHit, true);
-        }
-        ani.SetBool(hashHit, false);
-    }
-    IEnumerator FSM()
-    {
-        if(player == null)
+            ani.SetBool("isMoving", false);
+            ani.ResetTrigger("isAttack1_");
+            ani.ResetTrigger("isAttack2_");
+            ani.SetTrigger("isHit_");         
+        }        
+    }    
+    IEnumerator Move()
+    {    
+        if(dis > 4f)
         {
-            ani.SetBool(hashRun, true);
-            yield return new WaitForSeconds(3.0f);
-            ani.SetBool(hashRun, false);
-        }
-        
-        if(player != null)
+            ani.SetBool("isMoving", true);
+            transform.position += new Vector3(forPlayer.normalized.x * Time.deltaTime * 1.5f, 0f,
+                forPlayer.normalized.z * Time.deltaTime * 1.5f);
+
+            yield return null;
+        }        
+    }    
+    IEnumerator Attack()
+    {      
+        if(dis <= 4f)
         {
-            transform.forward = player.transform.position;
-            float dis = Vector3.Distance(transform.position, player.transform.position);            
-            if(dis > 3f)
+            ani.SetBool("isMoving", false);          
+            
+            Debug.Log(result);
+            
+            if (result == 0)
             {
-                transform.Translate(player.transform.position * Time.deltaTime * 0.5f);
+                ani.SetTrigger("isAttack1_");
+                yield return new WaitForSecondsRealtime(3f);               
             }
-            if(dis <= 3f)
+            else if (result == 1)
             {
-                int result = (int)Random.Range(0, 2f);
-                switch(result)
-                {
-                    case 1:
-                        ani.SetBool(hashAttack1, true);
-                        yield return new WaitForSeconds(3.0f);
-                        ani.SetBool(hashAttack1, false);
-                        break;
-                    case 2:
-                        ani.SetBool(hashAttack2, true);
-                        yield return new WaitForSeconds(3.0f);
-                        ani.SetBool(hashAttack2, false);
-                        break;
-                }
-            }            
-        }  
+                ani.SetTrigger("isAttack2_");
+                yield return new WaitForSecondsRealtime(3f);                
+            }
+        }        
     }
 }

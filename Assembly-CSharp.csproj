@@ -96,6 +96,7 @@
     <Compile Include="Assets\Script\Object\Obj_QuestMark.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\HairProfile.cs" />
     <Compile Include="Assets\Script\UI\UI_joyStick.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_FSM.cs" />
     <Compile Include="Assets\Script\Parser\_02_MapDataParser.cs" />
     <Compile Include="Assets\Script\Monster\Monster_ani.cs" />
     <Compile Include="Assets\Script\MapData\_02_ForestParser.cs" />
@@ -114,7 +115,7 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyebrowProfile.cs" />
     <Compile Include="Assets\Script\Inventory\ClickItem.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\ExtremityProfile.cs" />
-    <Compile Include="Assets\Script\Boss\Boss_ani.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_Marker.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\CameraTarget.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Script\EffectDemo.cs" />
     <Compile Include="Assets\Script\Inventory\Inventory.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\AccessoryManager.cs" />
+    <Compile Include="Assets\Script\FSM\Boss.cs" />
     <Compile Include="Assets\Script\Parser\_01_Parser.cs" />
     <Compile Include="Assets\Script\Quest\QuestManager.cs" />
     <Compile Include="Assets\Script\Parser\_03_MapDataParser.cs" />
@@ -155,8 +157,10 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Boss\Boss_FSM.cs" />
-    <Compile Include="Assets\Script\FSM\Boss.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_Attack01.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_Attack02.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_Hit.cs" />
+    <Compile Include="Assets\Script\UI\Credit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DownLoadAssets\Particlecollection_Free samples\Plugins\Effect\Shader\Toon Blended Premmultiply.shader" />

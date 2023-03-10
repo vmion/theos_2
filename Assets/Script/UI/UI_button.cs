@@ -39,8 +39,7 @@ public class UI_button : MonoBehaviour
         //Time.timeScale = 0f;
         //Obj_Portal.CamX = true;
         ui.SetActive(true);
-    }
-    
+    }    
     public void CheckPortal_Village()
     {
         ui.SetActive(false);

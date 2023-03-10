@@ -47,7 +47,15 @@ public class Char_ani :  MonoBehaviour
         //CcenterPos = Rotate_Camera.rectTransform.position;
         ani.SetBool("Dead", false);
         //StartCoroutine("Move");
-    }    
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "Boss")
+        {
+            hp.fillAmount -= 10f;
+            ani.SetBool("isHit", true);
+        }
+    }
     public void Move()
     {
         //LcenterPos = JoyStick_Lever.rectTransform.position;
@@ -157,80 +165,7 @@ public class Char_ani :  MonoBehaviour
                 Debug.Log("쿨타임입니다.");
             }
         }
-    }
-    /*
-    public void ButtonSkill(string _skill)
-    {
-        if (_skill == "attack")
-        {
-            if (Skill_1.fillAmount == 1)
-            {
-                StartCoroutine(CoolTime(Skill_1, 1.2f));
-                ani.SetTrigger("Attack");
-                skillAudio1.Play();
-            }
-            else
-            {
-                Debug.Log("쿨타임입니다.");
-            }
-        }
-        if (_skill == "swing")
-        {
-            if (Skill_2.fillAmount == 1 && mp.fillAmount >= 0.1f)
-            {
-                StartCoroutine(CoolTime(Skill_2, 5));
-                ani.SetTrigger("Swing");
-                mp.fillAmount -= 0.1f;
-            }
-            else if (mp.fillAmount < 0.1f)
-            {
-                Debug.Log("마나가 부족합니다.");
-            }
-            else
-            {
-                Debug.Log("쿨타임입니다.");
-            }
-        }
-        if (_skill == "sting")
-        {
-            if (Skill_3.fillAmount == 1 && mp.fillAmount >= 0.15f)
-            {
-                StartCoroutine(CoolTime(Skill_3, 10));
-                ani.SetTrigger("Sting");
-                mp.fillAmount -= 0.15f;
-            }
-            else if (mp.fillAmount < 0.15f)
-            {
-                Debug.Log("마나가 부족합니다.");
-            }
-            else
-            {
-                Debug.Log("쿨타임입니다.");
-            }
-        }
-        if (_skill == "buff")
-        {
-            if (Skill_4.fillAmount == 1 && mp.fillAmount >= 0.2f)
-            {
-                StartCoroutine(CoolTime(Skill_4, 30));
-                ani.SetTrigger("Buff");
-                StartCoroutine(OnBuff(30));
-                Vector3 rotation = new Vector3(-90, 0, 0);
-                ParticleSystem instance = Instantiate(buff, transform.position, Quaternion.Euler(rotation));
-                Destroy(instance.gameObject, instance.main.duration);
-                mp.fillAmount -= 0.2f;
-            }
-            else if (mp.fillAmount < 0.2f)
-            {
-                Debug.Log("마나가 부족합니다.");
-            }
-            else
-            {
-                Debug.Log("쿨타임입니다.");
-            }
-        }
-    }
-    */
+    }    
     public void ButtonPortion()
     {
         if (Input.GetKeyDown(KeyCode.Alpha5))

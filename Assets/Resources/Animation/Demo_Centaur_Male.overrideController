@@ -7,21 +7,9 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Demo_Centaur_Male
-  m_Controller: {fileID: 9100000, guid: 97fee009d3ab9714ea6df99a982389a6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7fb1807fbbecfab4aa3902ac2a90ff2a, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: -3011783751353154217, guid: 3466c2c9c335cf54e86e67b17ec42265, type: 3}
     m_OverrideClip: {fileID: -7930148354865897234, guid: 75e7079a4a8f78d4398e940a110696e9, type: 3}
-  - m_OriginalClip: {fileID: 1092074296987442799, guid: 41ced061f47610f419a7ed4fcb88b554, type: 3}
-    m_OverrideClip: {fileID: -3809605327433216403, guid: 2f8b70435af2b4141a961ad35772ed12, type: 3}
   - m_OriginalClip: {fileID: 8033392231705393305, guid: b4e31430a8364c54a8445a3966e06557, type: 3}
     m_OverrideClip: {fileID: 7279000798069733980, guid: 40aa189f9fe645f4db0f20c5030c5a59, type: 3}
-  - m_OriginalClip: {fileID: 1892068297169081763, guid: 019bfaab88fbf69419a127acdf89f5e7, type: 3}
-    m_OverrideClip: {fileID: 1892068297169081763, guid: 019bfaab88fbf69419a127acdf89f5e7, type: 3}
-  - m_OriginalClip: {fileID: 2981756470391467202, guid: be538de46f360b0469066a4505b33bc3, type: 3}
-    m_OverrideClip: {fileID: 2981756470391467202, guid: be538de46f360b0469066a4505b33bc3, type: 3}
-  - m_OriginalClip: {fileID: 7520934048637458523, guid: 12f27b35540516c4da85a5bda511d10f, type: 3}
-    m_OverrideClip: {fileID: 7520934048637458523, guid: 12f27b35540516c4da85a5bda511d10f, type: 3}
-  - m_OriginalClip: {fileID: -3069250904251278391, guid: e8f712ef2411c66438d12e7b059b2581, type: 3}
-    m_OverrideClip: {fileID: -3069250904251278391, guid: e8f712ef2411c66438d12e7b059b2581, type: 3}
-  - m_OriginalClip: {fileID: -5203044901110216885, guid: 366dcfca498a01b4d8abab9a677ada25, type: 3}
-    m_OverrideClip: {fileID: -5203044901110216885, guid: 366dcfca498a01b4d8abab9a677ada25, type: 3}
