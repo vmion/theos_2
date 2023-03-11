@@ -16,9 +16,9 @@ public class TalkManager : MonoBehaviour
     void GenerateData()
     {
         //대사 생성 (obj id, 대화 )
-        talkData.Add(1000, new string[] { "안녕하세요:", });
-        talkData.Add(1020, new string[] { "안녕하세요:", });
-        talkData.Add(1021, new string[] { "안녕하세요:", });
+        talkData.Add(1000, new string[] { "촌장님께는 아직인가요?:", });
+        talkData.Add(1020, new string[] { "촌장님께는 아직인가요?:", });
+        talkData.Add(1021, new string[] { "촌장님께는 아직인가요?:", });
         talkData.Add(2000, new string[] { "우리 마을을 찾아주셔서 감사합니다.:", });
         talkData.Add(2010, new string[] { "우리 마을을 찾아주셔서 감사합니다.:", });
         talkData.Add(2011, new string[] { "우리 마을을 찾아주셔서 감사합니다.:", });

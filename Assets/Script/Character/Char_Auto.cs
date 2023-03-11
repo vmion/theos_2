@@ -41,7 +41,7 @@ public class Char_Auto : MonoBehaviour
             transform.position += move * Time.deltaTime * 0.5f;
             ani.SetBool("isMove", true);
             float dis = Vector3.Distance(transform.position, enemy.transform.position);
-            transform.forward = enemy.transform.position;
+            transform.forward = move.normalized;
             if (dis <= 2f)
             {
                 transform.LookAt(enemy.transform);

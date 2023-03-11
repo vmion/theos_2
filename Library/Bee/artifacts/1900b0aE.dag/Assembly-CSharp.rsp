@@ -448,6 +448,7 @@
 "Assets/Script/Quest/TalkManager.cs"
 "Assets/Script/TimeCheck.cs"
 "Assets/Script/UI/Credit.cs"
+"Assets/Script/UI/EscSetActive.cs"
 "Assets/Script/UI/UI_button.cs"
 "Assets/Script/UI/UI_fillamount.cs"
 "Assets/Script/UI/UI_Inventory.cs"

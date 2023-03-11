@@ -152,7 +152,7 @@ public class Char_ani :  MonoBehaviour
                 ani.SetTrigger("Buff");
                 StartCoroutine(OnBuff(30));
                 Vector3 rotation = new Vector3(-90, 0, 0);
-                ParticleSystem instance = Instantiate(buff, transform.position, Quaternion.Euler(rotation));
+                ParticleSystem instance = Instantiate(buff, Char.position, Quaternion.Euler(rotation));
                 Destroy(instance.gameObject, instance.main.duration);
                 mp.fillAmount -= 0.2f;
             }

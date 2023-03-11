@@ -25,7 +25,7 @@ public class UI_Start : MonoBehaviour
     {
         ui.SetActive(false);
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         Debug.Log("Á¾·á");
     }
     public void Close_Exit()

@@ -19,8 +19,11 @@ public class ClickItem : MonoBehaviour
     Equipment equip;
     public Text textWeapon;
     public Text textObject;
+    public Text textPoetion;
 
     public Char_EquipWeapon equipSword;
+    public GameObject portion;
+    public GameObject portionBack;
     void Start()
     {
         grRay = canvas.GetComponent<GraphicRaycaster>();
@@ -55,6 +58,7 @@ public class ClickItem : MonoBehaviour
                 hit = results[0];
                 HitEquipWeapon(hit);
                 HitEquipObject(hit);
+                HitPortion(hit);
             }
         }
     }
@@ -111,6 +115,22 @@ public class ClickItem : MonoBehaviour
                 ObjectImage.sprite = item.itemImage;
                 //equip.EquipItem(item);
                 textObject.text = "E";
+            }
+        }
+    }
+    void HitPortion(RaycastResult hit)
+    {
+        IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
+        //Debug.Log(hit.gameObject.transform.position);
+        if (clickInterface != null)
+        {
+            Item item = clickInterface.ClickItem();
+            //Debug.Log(item.itemName);
+            if (item.itemType == Item.ItemType.Used)
+            {
+                portion.SetActive(true);
+                portionBack.SetActive(true);
+                textPoetion.text = "E";
             }
         }
     }

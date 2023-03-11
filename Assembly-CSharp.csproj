@@ -154,6 +154,7 @@
     <Compile Include="Assets\Script\Inventory\Item.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\InstanceCheck.cs" />
+    <Compile Include="Assets\Script\UI\EscSetActive.cs" />
     <Compile Include="Assets\Script\Boss\Boss_Hp.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\TimeCheck.cs" />
