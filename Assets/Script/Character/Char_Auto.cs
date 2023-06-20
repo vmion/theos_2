@@ -36,7 +36,7 @@ public class Char_Auto : MonoBehaviour
     {       
         if(enemy.activeSelf == true)
         {
-            //transform.Translate(enemy.transform.position * Time.deltaTime * 0.05f);
+            
             Vector3 move = enemy.transform.position - transform.position;
             transform.position += move * Time.deltaTime * 0.5f;
             ani.SetBool("isMove", true);
@@ -58,7 +58,7 @@ public class Char_Auto : MonoBehaviour
 
         if(mobList == null)
         {
-            Debug.Log("주위에 몬스터가 없습니다.");
+            Debug.Log("Not Monster in this area.");
         }
 
         marker.transform.position = new Vector3(transform.position.x, marker.transform.position.y,

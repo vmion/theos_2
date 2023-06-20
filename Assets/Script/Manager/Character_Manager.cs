@@ -56,21 +56,21 @@ public class Character_Manager : MonoBehaviour
             instance.transform.position = new Vector3(-15, 0, 0);
             SceneName.SetActive(true);
             Text sceneText = SceneName.GetComponentInChildren<Text>();
-            sceneText.text = "≈©∑π≈∏¿« ∏∂¿ª";
+            sceneText.text = "Village of Creta";
             Invoke("SceneUIActiveFalse", 2f);
         }
         if (_scene.name == "_02_Forest")
         {
             SceneName.SetActive(true);
             Text sceneText = SceneName.GetComponentInChildren<Text>();
-            sceneText.text = "±Ì¿∫ Ω£";                       
+            sceneText.text = "Inner Forest";                       
             Invoke("SceneUIActiveFalse", 2f);
         }
         if (_scene.name == "_03_Labyrinth")
         {
             SceneName.SetActive(true);
             Text sceneText = SceneName.GetComponentInChildren<Text>();
-            sceneText.text = "≈©∑π≈∏¿« πÃ±√";            
+            sceneText.text = "The Labyrinth";            
             Invoke("SceneUIActiveFalse", 2f);
         }        
     }

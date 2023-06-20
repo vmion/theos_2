@@ -42,48 +42,33 @@ public class ForQuest : MonoBehaviour
         JSONNode story = root["Story"];
         JSONNode forComplete = root["forComplete"];
         JSONNode rewards = root["Rewards"];
-        /*
-        Debug.Log(txtAsset);
-        Debug.Log(title);
-        Debug.Log(story);
-        Debug.Log(forComplete);
-        Debug.Log(rewards);
-        */
-        //리스트에 데이터 저장
+       
 
         List<Quest> questList = new List<Quest>();
 
-        //1번째 퀘스트
-        //Quest q1 = new Quest();
-        q1.title = "빼앗긴 짐을 되찾아라";
-        q1.story = "마을주민이 짐을 가지고 숲을 건너오다가 몬스터들에게 짐을 빼앗겼다." +
-            "\n\n건네받은 검을 들고 그 짐을 되찾아오자.";
-        q1.forComplete = "몬스터를 사냥하고 짐 5개 회수하기";
-        q1.rewards = "초보자의 반지";
+                
+        q1.title = "Recover the stolen treasure";
+        q1.story = "Citizen was carrying his luggage across the forest, but his luggage was stolen by monsters." +
+            "\n\nPick up the sword you were given and bring back the luggage.";
+        q1.forComplete = "Hunt monsters and retrieve 5 luggage";
+        q1.rewards = "Beginner's Ring";
         questList.Add(q1);
-
-        //2번째 퀘스트
-        //
-        q2.title = "미궁을 돌파하라";
-        q2.story = "마을 근처에 생긴 미궁의 보스는 매해 산제물을 요구한다." +
-            "\n\n미궁을 돌파하여 보스를 사냥하고 마을사람들에게 안정을 되찾아주자.";
-        q2.forComplete = "미노타우루스 사냥";
-        q2.rewards = "튜토리얼 종료";
+                
+        
+        q2.title = "Minotaur Hunt";
+        q2.story = "The boss of the labyrinth near the village demands a sacrifice every year." +
+            "\n\nBreak through the labyrinth, hunt the boss, and restore stability to the citizens.";
+        q2.forComplete = "Minotaur Hunt";
+        q2.rewards = "End of tutorial";
         questList.Add(q2);
 
-        //리스트 형식을 Json형식으로 변환
+        //List to Json
         string jsonDataList = JsonUtility.ToJson(new Serialization<Quest>(questList));
-        //Debug.Log(jsonDataList);
 
-        //Json형식을 리스트형식으로 변환
+
+        //Json to List
         List<Quest> questListformJson = JsonUtility.FromJson<Serialization<Quest>>(jsonDataList).ToList();
-        /*
-        foreach (Quest one in questListformJson)
-        {
-            Debug.Log(one.title + "\n" + one.story + "\n"
-                + one.forComplete + "\n" + one.rewards);
-        }    
-        */
+        
     }
     void Update()
     {

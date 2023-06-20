@@ -47,7 +47,7 @@ public class Equipment : MonoBehaviour
         }
         else
         {
-            Debug.Log("슬롯이 가득 차 있습니다.");
+            Debug.Log("Slot is full.");
         }
     }
     void Update()

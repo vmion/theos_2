@@ -34,19 +34,19 @@ public class UI_Loading : MonoBehaviour
     }
     IEnumerator LoadSceneData()
     {
-        // Scene 데이터 로드(테이블기반)
+        // Scene Data Load(Based .csv)
         foreach(SceneData one in sceneDataList)
         {
             yield return new WaitForSeconds(0.3f);
-            //GameObject obj = Resources.Load<GameObject>(one.name);
+            
             loadCount++;
-            //yield return null;
+            
         }        
     }
     void Update()
     {
         elapsed = elapsed + Time.deltaTime;
-        //uiBar.fillAmount = elapsed / duration;
+        
         uiBar.fillAmount = ((float)loadCount / (float)sceneDataList.Count);        
     }
 }

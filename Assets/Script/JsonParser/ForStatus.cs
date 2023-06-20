@@ -40,12 +40,6 @@ public class ForStatus : MonoBehaviour
         JSONNode JInt = root["INT"];
         JSONNode JCon = root["CON"];
 
-        //Debug.Log(JStr);
-        //Debug.Log(JAgi);
-        //Debug.Log(JInt);
-        //Debug.Log(JCon);
-
-        //리스트에 데이터 저장
         List<Status> statList = new List<Status>();
         playerStatus.Str = JStr;
         playerStatus.Agi = JAgi;
@@ -56,10 +50,9 @@ public class ForStatus : MonoBehaviour
         Agi.text = "AGI : " + playerStatus.Agi.ToString();
         Int.text = "INT : " + playerStatus.Int.ToString();
         Con.text = "CON : " + playerStatus.Con.ToString();
-        //리스트 형식을 Json형식으로 변환
+        
         string jsonDataList = JsonUtility.ToJson(new Serialization<Status>(statList));        
 
-        //Json형식을 리스트형식으로 변환
         List<Status> statListformJson = JsonUtility.FromJson<Serialization<Status>>(jsonDataList).ToList();
         
     }

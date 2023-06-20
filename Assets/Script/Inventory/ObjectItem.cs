@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ObjectItem : MonoBehaviour, IObjectItem
 {
-    [Header("아이템")]
+    [Header("Item")]
     public Item item;
-    [Header("아이템 이미지")]
+    [Header("Item Image")]
     public Image itemImage;
     
     void Start()

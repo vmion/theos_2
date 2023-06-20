@@ -9,15 +9,14 @@ public class Boss : MonoBehaviour
     {
         IDLE,
         WALK,
-        ATTACK1, // 뿔로 들이받음
-        ATTACK2, // 손톱으로 할큄       
+        ATTACK1, 
+        ATTACK2,        
         HIT
     }
     public State state;
 
     private void Start()
-    {
-        //체인지 스테이트에서 원하는 상태로 시작합니다
+    {        
         ChangeState(State.IDLE);
     }
 
@@ -67,7 +66,7 @@ public class Boss : MonoBehaviour
 
     private void ChangeState(State state)
     {
-        //스테이트에서 나가기전에 마지막으로 실행되는 Exit()함수;
+        
         switch (this.state)
         {
             case State.IDLE:
@@ -89,7 +88,7 @@ public class Boss : MonoBehaviour
 
         this.state = state;
 
-        //스테이트에서 들어가고나서 처음으로 실행되는 Enter()함수;
+        
         switch (state)
         {
             case State.IDLE:

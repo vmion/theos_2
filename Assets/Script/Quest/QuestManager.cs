@@ -35,41 +35,21 @@ public class QuestManager : MonoBehaviour
     }    
     void GenerateData()
     {
-        questList.Add(10, new QuestData("빼앗긴 짐을 되찾아라", 1000));        
-        questList.Add(20, new QuestData("미궁을 돌파하라", 2000));      
+        questList.Add(10, new QuestData("Recover the stolen treasure", 1000));        
+        questList.Add(20, new QuestData("Minotaur Hunt", 2000));      
     }
-    // Npc Id를 받아 퀘스트 번호를 반환하는 함수 
+     
     public int GetQuestTalkIndex(int id) 
     {
         return questId + questActionIndex;
     }
 
-    public string CheckQuest() //오버로딩 
+    public string CheckQuest()  
     {
-        //return Quest Name
+        
         return questList[questId].questName;
     }
-    /*
-    public string CheckQuest(int id) //npc id
-    {
-
-        //Next Talk Target
-        //매개변수로 받은 id가 
-        if (id == questList[questId].NpdId[questActionIndex])
-        {
-            questActionIndex++;
-        }    
-        //Talk complete & Next Quest
-        //퀘스트 리스트에 있는 NpcId(퀘스트에 참여하는)
-        if (questActionIndex == questList[questId].NpdId.Length)
-        {
-            NextQuest();
-        }            
-
-        //return Quest Name
-        return questList[questId].questName;
-    }
-    */
+   
     public void isComplete()
     {
         if(questCheck == true)

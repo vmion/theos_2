@@ -9,7 +9,7 @@ public class Char_EquipWeapon : MonoBehaviour
     GameObject nowWeapon;
     void Start()
     {
-        //시작할때 아이템 추가 -> 장착시 추가    
+        
         Transform[] allChilderen = GetComponentsInChildren<Transform>();
         foreach(Transform one in allChilderen)
         {
@@ -19,7 +19,7 @@ public class Char_EquipWeapon : MonoBehaviour
             }
         }                    
     }
-    //무기 장착시 prefab 추가
+    
     public void EquipSword()
     {
         nowWeapon = Instantiate(sword, weaponPath);

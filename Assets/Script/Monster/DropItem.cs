@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DropItem : MonoBehaviour
 {
-    //몬스터 죽을때의 파티클
+    
     public ParticleSystem particle;
     public float hp = 100f;
     void Start()
@@ -18,11 +18,8 @@ public class DropItem : MonoBehaviour
         if(hp <= 0)
         {
             Debug.Log("hp == 0");
-            ParticleSystem instance = Instantiate(particle, transform.position,
-                transform.rotation);
-            //AudioSource deathAudio = instance.GetComponent<AudioSource>();
-            //deathAudio.Play();
-
+            ParticleSystem instance = Instantiate(particle, transform.position, transform.rotation);
+            
             Destroy(instance.gameObject, instance.main.duration);
             gameObject.SetActive(false);
         }

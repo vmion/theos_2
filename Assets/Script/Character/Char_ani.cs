@@ -11,15 +11,7 @@ public class Char_ani :  MonoBehaviour
     private Transform Cam;
     Animator ani;
     public Image hp;
-    public static float moveSpeed;
-    //Vector2 centerPos;
-    //Vector2 LcenterPos;
-    //public Image JoyStick;
-    //public Image JoyStick_Lever;
-    //Vector2 CcenterPos;
-    //Vector2 LCcenterPos;
-    //public Image Rotate_Camera;
-    //public Image Camera_Lever;
+    public static float moveSpeed;    
     [SerializeField]
     private Image Skill_1;
     [SerializeField]
@@ -43,10 +35,9 @@ public class Char_ani :  MonoBehaviour
         Char = Character_Manager.instance.transform.GetChild(0);
         ani = Char.GetComponent<Animator>();
         moveSpeed = 3f;
-        //centerPos = JoyStick.rectTransform.position;
-        //CcenterPos = Rotate_Camera.rectTransform.position;
+        
         ani.SetBool("Dead", false);
-        //StartCoroutine("Move");
+        
     }
     private void OnTriggerExit(Collider other)
     {
@@ -58,9 +49,7 @@ public class Char_ani :  MonoBehaviour
     }
     public void Move()
     {
-        //LcenterPos = JoyStick_Lever.rectTransform.position;
-        //Vector2 moveVec = (LcenterPos - centerPos).normalized;
-        //Vector2 moveInput = new Vector2(moveVec.x, moveVec.y);
+        
         
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         bool isMove = moveInput.magnitude != 0;
@@ -78,9 +67,7 @@ public class Char_ani :  MonoBehaviour
     
     public void LookAround()
     {        
-        //LCcenterPos = Camera_Lever.rectTransform.position;
-        //Vector2 moveVec = (LCcenterPos - CcenterPos).normalized;
-        //Vector2 rotateInput = new Vector2(moveVec.x, moveVec.y);
+       
         Vector2 rotateInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         Vector3 camAngle = Cam.rotation.eulerAngles;
         float x = camAngle.x - rotateInput.y;
@@ -107,7 +94,7 @@ public class Char_ani :  MonoBehaviour
             }
             else
             {
-                Debug.Log("쿨타임입니다.");                
+                Debug.Log("Need more time.");                
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -120,11 +107,11 @@ public class Char_ani :  MonoBehaviour
             }
             else if(mp.fillAmount < 0.1f)
             {
-                Debug.Log("마나가 부족합니다.");
+                Debug.Log("Mp is not enough.");
             }
             else
             {
-                Debug.Log("쿨타임입니다.");
+                Debug.Log("Need more time.");
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -137,11 +124,11 @@ public class Char_ani :  MonoBehaviour
             }
             else if (mp.fillAmount < 0.15f)
             {
-                Debug.Log("마나가 부족합니다.");
+                Debug.Log("Mp is not enough.");
             }
             else
             {
-                Debug.Log("쿨타임입니다.");
+                Debug.Log("Need more time.");
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
@@ -158,11 +145,11 @@ public class Char_ani :  MonoBehaviour
             }
             else if (mp.fillAmount < 0.2f)
             {
-                Debug.Log("마나가 부족합니다.");
+                Debug.Log("Mp is not enough.");
             }
             else
             {
-                Debug.Log("쿨타임입니다.");
+                Debug.Log("Need more time.");
             }
         }
     }    
@@ -177,11 +164,11 @@ public class Char_ani :  MonoBehaviour
             }
             else
             {
-                Debug.Log("쿨타임입니다.");
+                Debug.Log("Need more time.");
             }
             if(mp.fillAmount == 1)
             {
-                Debug.Log("MP가 가득 차 있습니다.");
+                Debug.Log("MP is Full.");
             }
         }
     }
@@ -206,7 +193,7 @@ public class Char_ani :  MonoBehaviour
    
     void Update()
     {
-        //LookAround();
+        
         Move();        
         ButtonSkill();
         ButtonPortion();

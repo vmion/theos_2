@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class ClickItem : MonoBehaviour
 {
-    [Header("인벤토리")]
+    [Header("Inventory")]
     public Inventory inventory;    
 
     public Canvas canvas;
@@ -66,15 +66,14 @@ public class ClickItem : MonoBehaviour
     void HitCheckObject(RaycastResult hit) 
     {
         IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
-        //Debug.Log(hit.gameObject.transform.position);
+        
         if (clickInterface != null) 
         {
             Item item = clickInterface.ClickItem();
-            //Debug.Log(item.itemName);            
+                       
             explain.gameObject.SetActive(true);
             explain.transform.position = _eventData.position;
-            //explain.sprite를 아이템에 달려있는 sprite로 변경
-            //explain의 pivot을 0,1로 변경
+            
             explain.sprite = item.itemExplain;
             explain.color = new Color(1, 1, 1, 0.95f);
         }
@@ -82,18 +81,18 @@ public class ClickItem : MonoBehaviour
     void HitEquipWeapon(RaycastResult hit)
     {
         IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
-        //Debug.Log(hit.gameObject.transform.position);
+       
         if (clickInterface != null)
         {
             Item item = clickInterface.ClickItem();            
-            //Debug.Log(item.itemName); 
+            
             if(item.itemType == Item.ItemType.Weapon)
             {
                 Equipment.gameObject.SetActive(true);
-                //equipWeapon.SetActive(true);
+                
                 Image weaponImage = equipWeapon.GetComponent<Image>();
                 weaponImage.sprite = item.itemImage;
-                //equip.EquipItem(item);
+                
                 textWeapon.text = "E";
                 equipSword.EquipSword();
             }
@@ -102,18 +101,18 @@ public class ClickItem : MonoBehaviour
     void HitEquipObject(RaycastResult hit)
     {
         IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
-        //Debug.Log(hit.gameObject.transform.position);
+        
         if (clickInterface != null)
         {
             Item item = clickInterface.ClickItem();
-            //Debug.Log(item.itemName);
+           
             if (item.itemType == Item.ItemType.Object)
             {
                 Equipment.gameObject.SetActive(true);
-                //equipWeapon.SetActive(true);
+                
                 Image ObjectImage = equipObject.GetComponent<Image>();
                 ObjectImage.sprite = item.itemImage;
-                //equip.EquipItem(item);
+                
                 textObject.text = "E";
             }
         }
@@ -121,11 +120,11 @@ public class ClickItem : MonoBehaviour
     void HitPortion(RaycastResult hit)
     {
         IObjectItem clickInterface = hit.gameObject.GetComponent<IObjectItem>();
-        //Debug.Log(hit.gameObject.transform.position);
+        
         if (clickInterface != null)
         {
             Item item = clickInterface.ClickItem();
-            //Debug.Log(item.itemName);
+            
             if (item.itemType == Item.ItemType.Used)
             {
                 portion.SetActive(true);
